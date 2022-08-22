@@ -1,15 +1,19 @@
 import os
-from flask import Flask
+from flask import (
+    Flask, flash, render_template,
+    redirect, request, session, url_for)
 if os.path.exists("env.py"):
     import env
 
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 @app.route("/")
-def hello():
-    return "Hello World"
+@app.route("/index", methods=["POST, GET"])
+def index():
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
