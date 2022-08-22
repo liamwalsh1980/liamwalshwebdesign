@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Liam Walsh Web Design</title>
+</head>
+<body class="bg-black">
+    <header class="sticky top-0 border-b border-blue-500 z-10">
+        <!-- Main Navbar -->
+        <div class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
+            <div>
+                <a aria-label="Home" href="{{ url_for('index') }}"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Liam Walsh Web Design</h1></a>
+            
+            </div>
+            <nav>
+                <ul class="flex space-x-2 lg:space-x-6 xl:space-x-8 text-blue-700 font-medium text-sm lg:text-xs xl:text-sm"> 
+                    <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="{{ url_for('index') }}">Home</a></li>
+                    <div class="border-1 border-blue-200"></div>
+                    <li><a aria-label="What is counselling" class="hover:text-purblueple-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
+                    <div class="border-1 border-blue-200"></div>
+                    <li><a aria-label="Supervision and staff care" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Portfolio</a></li>
+                    <div class="border-1 border-blue-200"></div>
+                    <li><a aria-label="Contact and fees" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Services</a></li>
+                    <div class="border-1 border-v-200"></div>
+                    <li><a aria-label="Protecting you" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Contact</a></li>
+                    <div class="border-1 border-blue-200"></div>
+                </ul>
+            </nav>
+        </div>
+        <!-- Mobile sidenav -->
+        <div x-data="{ open: true }" aria-labelledby="mobile-navbar">
+            <div class="py-2 flex justify-between px-4 lg:hidden">
+                <div>
+                    <a aria-label="Home" href="{{ url_for('index') }}"><h1 class="text-2xl font-bold text-blue-900 hover:text-blue-700">The courage to be</h1></a>
+                    <h2 class="font-medium text-blue-400">Brian Walsh Counselling</h2>
+                </div>
+                <nav id="top" class="lg:hidden mt-2">
+                    <button 
+                        type="button"
+                        @click="open = ! open"
+                        @keydown.escape="open = true">
+                    <span class="sr-only">Open main menu</span>
+                        <svg x-show="open"
+                        
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-black"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg x-show="! open"
+                        
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-black"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+            <!-- Mobile Dropdown -->
+            <div class="bg-black w-full text-center py-8" 
+            x-show="! open" @click.outside="open = true" aria-labelledby="mobile-dropdown">
+                <ul class="flex flex-col text-blue-700 space-y-4"> 
+                    <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Home</a></li>
+                    <div class="flex flex-col items-center">
+                        <div class="border-1 border-blue-200 border-b w-1/2 sm:w-1/4"></div>
+                    </div>
+                    <li><a aria-label="What is counselling" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
+                    <div class="flex flex-col items-center">
+                        <div class="border-1 border-blue-200 border-b w-1/2 sm:w-1/4"></div>
+                    </div>
+                    <li><a aria-label="Supervision and staff care" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Portfolio</a></li>
+                     <div class="flex flex-col items-center">
+                        <div class="border-1 border-blue-200 border-b w-1/2 sm:w-1/4"></div>
+                    </div>
+                    <li><a aria-label="Contact and fees" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Services</a></li>
+                    <div class="flex flex-col items-center">
+                        <div class="border-1 border-blue-200 border-b w-1/2 sm:w-1/4"></div>
+                    </div>
+                    <li><a aria-label="Procecting you" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Contact</a></li>
+                    <div class="flex flex-col items-center">
+                        <div class="border-1 border-blue-200 border-b w-1/2 sm:w-1/4"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
