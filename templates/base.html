@@ -18,21 +18,20 @@
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="bg-gray-200">
+<body class="bg-black">
     <header class=" border-b border-blue-500 z-10">
         <!-- Main Navbar -->
         <div class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
-            <div class="sticky top-0 border border-black py-14 flex w-1/6">
-                <!-- <a aria-label="Home" href="{{ url_for('index') }}" class=""> -->
-                    
-                    <div class="absolute top-0 left-0"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Liam Walsh</h1></div>
-                   
-                    <div class="absolute right-1/2 top-10"><i class="fa-solid fa-cubes text-blue-700 text-3xl"></i></div>
-
-                    <div class="absolute bottom-0 right-3"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Web Design</h1></div>
-
-                <!-- </a> -->
+            <div class="border border-black">
+                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-start space-x-2">
+                    <h1 class="text-2xl font-bold text-white hover:text-blue-700">Liam Walsh</h1>
+                    <i class="fa-solid fa-cubes text-blue-700 text-4xl pt-6"></i>
+                    <h1 class="text-2xl font-bold text-white hover:text-blue-700 pt-12 pl-2">Web Design</h1>
+                </a>
             </div>
+
+            
+
             <nav>
                 <ul class="flex space-x-2 lg:space-x-6 xl:space-x-8 text-blue-700 font-medium text-sm lg:text-xs xl:text-sm"> 
                     <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="{{ url_for('index') }}">Home</a></li>
@@ -63,7 +62,7 @@
                     <span class="sr-only">Open main menu</span>
                         <svg x-show="open"
                         
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-black"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-white"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -76,7 +75,7 @@
                         </svg>
                         <svg x-show="! open"
                         
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-black"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-white"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
