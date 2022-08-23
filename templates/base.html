@@ -11,23 +11,27 @@
     <!-- Tailwind CSS and custom CSS scripts -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css" rel="stylesheet">
     
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    
     <title>Liam Walsh Web Design</title>
-
 
     <!-- Alpine JS script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" 
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="bg-gray-900">
-    <header class="sticky top-0 border-b border-blue-500 z-10">
+<body class="bg-gray-200">
+    <header class=" border-b border-blue-500 z-10">
         <!-- Main Navbar -->
         <div class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
-            <div>
-                <a aria-label="Home" href="{{ url_for('index') }}"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Liam Walsh - Web Design</h1></a>
-            
+            <div class="sticky top-0 border border-black py-14 flex w-1/6">
+                <!-- <a aria-label="Home" href="{{ url_for('index') }}" class=""> -->
+                    
+                    <div class="absolute top-0 left-0"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Liam Walsh</h1></div>
+                   
+                    <div class="absolute right-1/2 top-10"><i class="fa-solid fa-cubes text-blue-700 text-3xl"></i></div>
+
+                    <div class="absolute bottom-0 right-3"><h1 class="text-2xl font-bold text-blue-700 hover:text-blue-700">Web Design</h1></div>
+
+                <!-- </a> -->
             </div>
             <nav>
                 <ul class="flex space-x-2 lg:space-x-6 xl:space-x-8 text-blue-700 font-medium text-sm lg:text-xs xl:text-sm"> 
