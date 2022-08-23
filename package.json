@@ -1,0 +1,28 @@
+{
+  "name": "liamwalshwebdesign",
+  "version": "1.0.0",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i tailwind.css -o ./static/css/styles.css --dev",
+    "watch": "npx tailwindcss -i tailwind.css -o ./static/css/styles.css --watch",
+    "prod": "npx tailwindcss -i tailwind.css -o ./static/css/styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamwalsh1980/liamwalshwebdesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamwalsh1980/liamwalshwebdesign/issues"
+  },
+  "homepage": "https://github.com/liamwalsh1980/liamwalshwebdesign#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.4"
+  }
+}

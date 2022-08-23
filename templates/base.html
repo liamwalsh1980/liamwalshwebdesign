@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons Script tag from cdnjs.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/>
+    <!-- Tailwind CSS and custom CSS scripts -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css" rel="stylesheet">
+    
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
     <title>Liam Walsh Web Design</title>
+
+
+    <!-- Alpine JS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" 
+        integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="bg-black">
+<body class="bg-gray-900">
     <header class="sticky top-0 border-b border-blue-500 z-10">
         <!-- Main Navbar -->
         <div class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
@@ -19,7 +33,7 @@
                 <ul class="flex space-x-2 lg:space-x-6 xl:space-x-8 text-blue-700 font-medium text-sm lg:text-xs xl:text-sm"> 
                     <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="{{ url_for('index') }}">Home</a></li>
                     <div class="border-1 border-blue-200"></div>
-                    <li><a aria-label="What is counselling" class="hover:text-purblueple-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
+                    <li><a aria-label="What is counselling" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
                     <div class="border-1 border-blue-200"></div>
                     <li><a aria-label="Supervision and staff care" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Portfolio</a></li>
                     <div class="border-1 border-blue-200"></div>
