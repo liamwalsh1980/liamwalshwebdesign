@@ -90,37 +90,35 @@
                 </nav>
             </div>
             <!-- Mobile Dropdown -->
-            <div class="bg-black text-center py-8" 
+            <div class="bg-black text-center py-8 space-y-4 lg:space-y-0 flex flex-col lg:flex-row" 
                  x-show="! open" @click.outside="open = true" aria-labelledby="mobile-dropdown">
-                <ul class="flex flex-col text-blue-700 space-y-4"> 
+                <div class="text-blue-700 w-full gap-y-4 px-4 lg:px-0 flex"> 
                     
-                    <div class="flex flex-col items-center">
-                        <div class="h-full bg-white w-1/2 sm:w-1/4 flex items-center justify-center">
-                            <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Home</a></li>
+                
+                    <div class="flex flex-col items-center w-full">
+                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
+                            <div><a aria-label="About" class="" href="">About</a></div>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="h-full bg-white w-1/2 sm:w-1/4 flex items-center justify-center">
-                            <li><a aria-label="About" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
+                            <div><a aria-label="Portfolio" class="" href="">Portfolio</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-blue-700 w-full gap-y-4 px-4 lg:px-0 flex"> 
+
+                    <div class="flex flex-col items-center w-full">
+                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
+                            <div><a aria-label="Services" class="" href="">Services</a></div>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="h-full bg-white w-1/2 sm:w-1/4 flex items-center justify-center">
-                            <li><a aria-label="Portfolio" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Portfolio</a></li>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col items-center">
-                        <div class="h-full bg-white w-1/2 sm:w-1/4 flex items-center justify-center">
-                            <li><a aria-label="Services" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Services</a></li>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col items-center">
-                        <div class="h-full bg-white w-1/2 sm:w-1/4 flex items-center justify-center">
-                            <li><a aria-label="Contact" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Contact</a></li>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
+                            <div><a aria-label="Contact" class="" href="">Contact</a></div>
                         </div>
                     </div>
                 </ul>
