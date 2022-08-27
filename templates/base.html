@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- FontAwesome Icons Script tag from cdnjs.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
@@ -18,20 +19,17 @@
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="bg-black">
+<body class="bg-black text-[#3B82F6]">
     <header class="border-b border-blue-500 z-10">
         <!-- Main Navbar -->
-
         <div x-data="{ open: true }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
-            <div class="border border-black">
-                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2">
-                    <h1 class="text-base sm:text-2xl font-bold text-white hover:text-blue-700">Liam Walsh</h1>
-                    <i class="fa-solid fa-cubes text-blue-700 text-2xl sm:text-4xl sm:pt-6"></i>
-                    <h1 class="text-base sm:text-2xl font-bold text-white hover:text-blue-700 sm:pt-12 sm:pl-2">Web Design</h1>
-                </a>
-            </div>
+            <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
+                <h1 class="text-2xl font-bold text-white group-hover:text-[#3B82F6]">Liam Walsh</h1>
+                <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 group-hover:text-white"></i>
+                <h1 class="text-2xl font-bold text-white group-hover:text-[#3B82F6] sm:pt-12 sm:pl-2">Web Design</h1>
+            </a>
             <nav id="top" class="sm:flex sm:items-center absolute right-8">
-                <button 
+                <button
                     type="button"
                     @click="open = ! open"
                     @keydown.escape="open = true">
@@ -62,32 +60,30 @@
                     </svg>
                 </button>
             </nav>
-            <nav x-show="! open" @click.outside="open = true" class="pr-16">
-                <ul class="flex space-x-2 lg:space-x-6 xl:space-x-8 text-blue-700 font-medium text-sm lg:text-xs xl:text-sm"> 
-                    <li><a aria-label="Home" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="{{ url_for('index') }}">Home</a></li>
-                    <div class="border-1 border-blue-200"></div>
-                    <li><a aria-label="What is counselling" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">About</a></li>
-                    <div class="border-1 border-blue-200"></div>
-                    <li><a aria-label="Supervision and staff care" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Portfolio</a></li>
-                    <div class="border-1 border-blue-200"></div>
-                    <li><a aria-label="Contact and fees" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Services</a></li>
-                    <div class="border-1 border-v-200"></div>
-                    <li><a aria-label="Protecting you" class="hover:text-blue-400 active:text-blue-400 focus:text-blue-400" href="">Contact</a></li>
-                    <div class="border-1 border-blue-200"></div>
+            <nav x-show="! open" @click.outside="open = true"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 scale-90"
+                 x-transition:enter-end="opacity-100 scale-100"
+                 x-transition:leave="transition ease-in duration-300"
+                 x-transition:leave-start="opacity-100 scale-100"
+                 x-transition:leave-end="opacity-0 scale-90"
+                 class="pr-24 xl:pr-32">
+                <ul class="flex space-x-16 xl:space-x-20 font-medium text-base xl:text-lg">  
+                    <li><a aria-label="What is counselling" class="hover:text-white" href="{{ url_for('index') }}">About</a></li>
+                    <li><a aria-label="Supervision and staff care" class="hover:text-white" href="{{ url_for('index') }}">Portfolio</a></li>
+                    <li><a aria-label="Contact and fees" class="hover:text-white" href="{{ url_for('index') }}">Services</a></li>
+                    <li><a aria-label="Protecting you" class="hover:text-white" href="{{ url_for('index') }}">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
         <!-- Mobile sidenav -->
         <div x-data="{ open: true }" aria-labelledby="mobile-navbar">
             <div class="py-2 flex justify-between sm:justify-between px-4 lg:hidden">
-                <div class="border border-black">
-                    <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2">
-                        <h1 class="text-base sm:text-2xl font-bold text-white hover:text-blue-700">Liam Walsh</h1>
-                        <i class="fa-solid fa-cubes text-blue-700 text-2xl sm:text-4xl sm:pt-6"></i>
-                        <h1 class="text-base sm:text-2xl font-bold text-white hover:text-blue-700 sm:pt-12 sm:pl-2">Web Design</h1>
-                    </a>
-                </div>
+                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2">
+                    <h1 class="text-base sm:text-2xl font-bold text-white">Liam Walsh</h1>
+                    <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6"></i>
+                    <h1 class="text-base sm:text-2xl font-bold text-white sm:pt-12 sm:pl-2">Web Design</h1>
+                </a>
                 <nav id="top" class="sm:flex sm:items-center">
                     <button 
                         type="button"
@@ -122,35 +118,36 @@
                 </nav>
             </div>
             <!-- Mobile Dropdown -->
-            <div class="bg-black text-center py-8 space-y-4 lg:space-y-0 flex flex-col lg:flex-row" 
-                 x-show="! open" @click.outside="open = true" aria-labelledby="mobile-dropdown">
-                <div class="text-blue-700 w-full gap-y-4 px-4 lg:px-0 flex"> 
-                    
-                
+            <div class="text-center py-8 space-y-4 lg:space-y-0 flex flex-col lg:flex-row text-white" 
+                 x-show="! open"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 scale-90"
+                 x-transition:enter-end="opacity-100 scale-100"
+                 x-transition:leave="transition ease-in duration-300"
+                 x-transition:leave-start="opacity-100 scale-100"
+                 x-transition:leave-end="opacity-0 scale-90"
+                 @click.outside="open = true" aria-labelledby="mobile-dropdown">
+                <div class="w-full gap-y-4 px-4 lg:px-0 flex ">                 
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
-                            <div><a aria-label="About" class="" href="">About</a></div>
+                        <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
+                            <div><a aria-label="About" class="text-sm sm:text-base" href="">About</a></div>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Portfolio" class="" href="">Portfolio</a></div>
+                        <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
+                            <div><a aria-label="Portfolio" class="text-sm sm:text-base" href="">Portfolio</a></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="text-blue-700 w-full gap-y-4 px-4 lg:px-0 flex"> 
-
+                <div class="w-full gap-y-4 px-4 lg:px-0 flex"> 
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Services" class="" href="">Services</a></div>
+                        <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
+                            <div><a aria-label="Services" class="text-sm sm:text-base" href="">Services</a></div>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 hover:bg-white w-3/4 md:w-2/3 flex items-center justify-center rounded-xl py-1 text-white hover:text-blue-500 active:text-blue-500 focus:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Contact" class="" href="">Contact</a></div>
+                        <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
+                            <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Contact</a></div>
                         </div>
                     </div>
                 </ul>
