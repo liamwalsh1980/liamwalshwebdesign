@@ -1,8 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <section>
-        
+<div class="max-w-screen-xl mx-auto px-4 pt-40">
+    <section class="text-center flex flex-col justify-center items-center space-y-8">
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">Do you need a website ?</h1>
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-white w-3/4 md:w-2/3 lg:w-1/2">Whether its a new website you need or an upgrade to an existing site, I can offer you the right service !</h2>
+        <div class=" gap-y-4 px-4 lg:px-0 flex text-white space-x-8 lg:space-x-16">                 
+            <div class="bg-[#3B82F6] w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-white hover:text-[#3B82F6] active:bg-white active:text-[#3B82F6] cursor-pointer">
+                <div><a aria-label="About" class="text-sm sm:text-base" href="">Contact</a></div>
+            </div>
+            <div class="bg-white text-[#3B82F6] w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-[#3B82F6] hover:text-white active:bg-[#3B82F6] active:text-white cursor-pointer">
+                <div><a aria-label="Portfolio" class="text-sm sm:text-base" href="">Services</a></div>
+            </div>
+        </div>
     </section>
+</div>
 
 {% endblock %}
