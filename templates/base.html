@@ -75,7 +75,7 @@
                 <ul class="flex space-x-16 xl:space-x-20 font-medium text-base xl:text-lg">  
                     <li><a aria-label="What is counselling" class="hover:text-white" href="{{ url_for('index') }}">About</a></li>
                     <li><a aria-label="Supervision and staff care" class="hover:text-white" href="{{ url_for('index') }}">Portfolio</a></li>
-                    <li><a aria-label="Contact and fees" class="hover:text-white" href="{{ url_for('index') }}">Services</a></li>
+                    <li><a aria-label="Contact and fees" class="hover:text-white" href="{{ url_for('services') }}">Services</a></li>
                     <li><a aria-label="Protecting you" class="hover:text-white" href="{{ url_for('index') }}">Contact</a></li>
                 </ul>
             </nav>
@@ -146,7 +146,7 @@
                 <div class="w-full gap-y-4 px-4 lg:px-0 flex"> 
                     <div class="flex flex-col items-center w-full">
                         <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
-                            <div><a aria-label="Services" class="text-sm sm:text-base" href="">Services</a></div>
+                            <div><a aria-label="Services" class="text-sm sm:text-base" href="{{ url_for('services') }}">Services</a></div>
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-full">
