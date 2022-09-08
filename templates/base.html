@@ -24,7 +24,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="bg-black text-[#3B82F6] flex flex-col min-h-screen">
-    <header class="border-b border-blue-500 z-10">
+    <header class=" z-10">
         <!-- Main Navbar -->
         <div x-data="{ open: true }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
             <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
@@ -73,7 +73,7 @@
                  x-transition:leave-end="opacity-0 scale-90"
                  class="pr-24 xl:pr-32">
                 <ul class="flex space-x-16 xl:space-x-20 font-medium text-base xl:text-lg">  
-                    <li><a aria-label="What is counselling" class="hover:text-white" href="{{ url_for('index') }}">About</a></li>
+                    <li><a aria-label="What is counselling" class="hover:text-white" href="{{ url_for('about') }}">About</a></li>
                     <li><a aria-label="Supervision and staff care" class="hover:text-white" href="{{ url_for('index') }}">Portfolio</a></li>
                     <li><a aria-label="Contact and fees" class="hover:text-white" href="{{ url_for('services') }}">Services</a></li>
                     <li><a aria-label="Protecting you" class="hover:text-white" href="{{ url_for('index') }}">Contact</a></li>
@@ -134,7 +134,7 @@
                 <div class="w-full gap-y-4 px-4 lg:px-0 flex ">                 
                     <div class="flex flex-col items-center w-full">
                         <div class="bg-[#3B82F6] w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-white active:text-[#3B82F6] cursor-pointer">
-                            <div><a aria-label="About" class="text-sm sm:text-base" href="">About</a></div>
+                            <div><a aria-label="About" class="text-sm sm:text-base" href="{{ url_for('about') }}">About</a></div>
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-full">
@@ -164,13 +164,15 @@
     </main>
 
      <!-- Footer -->
-     <footer class="2xl:max-w-screen-xl mx-auto space-y-4 mt-auto mb-4 pt-4" aria-labelledby="footer">
-        <div class="text-center space-x-4">
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank"><i class="fa-brands fa-linkedin text-3xl text-white hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
-            <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank"><i class="fa-brands fa-github text-3xl text-white hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
-            <a aria-label="Email" href="mailto: lwalsh_1980@hotmail.co.uk" target="_blank"><i class="fa-solid fa-square-envelope text-3xl text-white hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
-        </div>
-        <p class="text-white text-center">Copyright &copy Liam Walsh Web Design</p>
-    </footer>
+     <div class="bg-white text-black">
+        <footer class="2xl:max-w-screen-xl mx-auto space-y-4 mt-auto mb-4 pt-4" aria-labelledby="footer">
+            <div class="text-center space-x-4">
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank"><i class="fa-brands fa-linkedin text-3xl hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
+                <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank"><i class="fa-brands fa-github text-3xl hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
+                <a aria-label="Email" href="mailto: lwalsh_1980@hotmail.co.uk" target="_blank"><i class="fa-solid fa-square-envelope text-3xl hover:text-[#3B82F6] active:text-[#1E417B]"></i></a>
+            </div>
+            <p class="text-center">Copyright &copy Liam Walsh Web Design</p>
+        </footer>
+    </div>
 </body>
 </html>
