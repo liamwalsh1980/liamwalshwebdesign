@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+
 <div class="">
     <section class="max-w-screen-xl mx-auto px-4 py-32 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">About Me</h1>
         <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-white w-3/4 md:w-2/3 lg:w-1/2">Welcome to my site. I am a fully qualified website designer and hold a level 5 diploma in Software Development. My main skills are in Web Application Development and User Experience Design.</h2>
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-white w-3/4 md:w-2/3 lg:w-1/2">My goal when building any website is to make sure that both you the client and your customers visiting the new site have the best experience. I can assure you that with my work ethic I can deliver the best in quality, efficiency and a cost effective solution. Whether you need a new website or a revamp to an existing one, please contact me for a free no obligation quote, today.</h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-white space-x-8 lg:space-x-16">                 
             <div class="bg-[#3B82F6] w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-white hover:text-[#3B82F6] active:bg-white active:text-[#3B82F6] cursor-pointer">
                 <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Contact</a></div>
@@ -16,77 +18,58 @@
     </section>
 
     <section class="bg-[#3B82F6]">
-        <div class="max-w-screen-xl mx-auto px-4 md:px-8 space-y-12">
-            <div class="flex text-black pt-8 lg:pt-24 w-full">
-                <h1 class="flex justify-center text-center lg:text-left text-2xl lg:text-4xl w-1/2">
-                    Tech Used
-                </h1>
-                <h1 class="flex justify-center text-center lg:text-left text-2xl lg:text-4xl w-1/2">
-                    What I can do!
-                </h1>
-            </div>
+        <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 flex flex-col lg:flex-row justify-around gap-x-12 space-y-8 lg:space-y-0 py-8 lg:py-24 text-black">
+    
+            <div class="flex flex-col space-y-6 h-96">
 
-            <div class="flex text-black pb-8 lg:pb-24 w-full">
-                <div class="flex flex-col text-center lg:text-left text-2xl lg:text-4xl w-1/2 space-y-8">
-                    <div class="flex justify-center lg:items-start space-x-16">
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    </div>
-                    <div class="flex justify-center lg:items-start space-x-16">
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    </div>
-                    <div class="flex justify-center lg:items-start space-x-16">
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                        <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
+                <h2 class="text-2xl lg:text-4xl text-center lg:text-left">What I can do</h2>
+
+                <div class="flex justify-center text-center lg:text-left text-2xl lg:text-4xl">
+                    <div class="flex flex-col justify-center lg:items-start space-y-8">
+                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Complete Design Process</div>
+                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Mobile Application Design</div>
+                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Database Structure</div>
+                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Marketing and SEO</div>
+                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Domain name and hosting</div>
                     </div>
                 </div>
-                
-                <div class="flex justify-center text-center lg:text-left text-2xl lg:text-4xl w-1/2">
-                    <div class="flex flex-col justify-center lg:items-start">
-                        <div><i class="fa-solid fa-check text-4xl lg:text-5xl px-4"></i>Complete Design Process</div>
-                        <div><i class="fa-solid fa-check text-4xl lg:text-5xl px-4"></i>Complete Design Process</div>
-                        <div><i class="fa-solid fa-check text-4xl lg:text-5xl px-4"></i>Complete Design Process</div>
-                        <div><i class="fa-solid fa-check text-4xl lg:text-5xl px-4"></i>Complete Design Process</div>
-                        <div><i class="fa-solid fa-check text-4xl lg:text-5xl px-4"></i>Complete Design Process</div>
+
+            </div>
+
+            <div class="flex justify-center items-center lg:hidden">
+                <div class="h-[1px] w-3/4 sm:w-2/3 md:w-1/2 bg-black"></div>
+            </div>
+
+            <div class="flex flex-col items-center lg:items-start justify-between lg:justify-start lg:space-y-6 h-96">
+
+                <h2 class="text-2xl lg:text-4xl">Tech Stack Used</h2>
+
+                <div class="flex py-4 space-x-8">
+                    <a href=""><i class="fa-brands fa-github text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-laravel text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-python text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-docker text-4xl lg:text-6xl"></i></a>
+                </div>
+                <div class="flex py-4 space-x-8">
                     
-                    </div>
+                    <a href=""><i class="fa-solid fa-database text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-html5 text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-bootstrap text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-aws text-4xl lg:text-6xl"></i></a>
+                    
                 </div>
+                <div class="flex py-4 space-x-8 ">
+                    <a href=""><i class="fa-brands fa-css3-alt text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-js text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-php text-4xl lg:text-6xl"></i></a>
+                    <a href=""><i class="fa-brands fa-cc-stripe text-4xl lg:text-6xl"></i></a>
+                </div>
+            
             </div>
-        
-            <!-- <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
-                
-            </div> -->
-
-            <!-- <div class="text-black space-y-8 py-8 lg:py-24">
-                
-                <div class="flex justify-center lg:items-start space-x-16">
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                </div>
-                <div class="flex justify-center lg:items-start space-x-16">
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                </div>
-                <div class="flex justify-center lg:items-start space-x-16">
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                    <div><i class="fa-brands fa-html5 text-4xl lg:text-5xl"></i></div>
-                </div>
-            </div> -->
         </div>
     </section>
 </div>
+
+
 
 {% endblock %}
