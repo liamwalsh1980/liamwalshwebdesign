@@ -15,8 +15,8 @@
         </div>
     </section>
 
-    <section class="bg-[#3B82F6]">
-        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse"
+    <section class="bg-[#1E417B]">
+        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse relative"
              x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
             <a href="" class="flex items-center justify-center md:space-x-2 lg:space-x-4 text-black">
                 <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden lg:block" :class="hover ? 'rotate-180 ease-in-out duration-700' : ''"></i>
@@ -26,7 +26,7 @@
             </a>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design">
+                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design" class="rounded-lg">
                 </a>
             </div>
         </div>
@@ -43,7 +43,7 @@
             </a>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design">
+                    <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design" class="rounded-lg">
                 </a>
             </div>
         </div>
@@ -60,7 +60,7 @@
             </a>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/website-development.jpg') }}" alt="Website Development">
+                    <img src="{{ ('static/images/website-development.jpg') }}" alt="Website Development" class="rounded-lg">
                 </a>
             </div>
         </div>
@@ -77,7 +77,7 @@
             </a>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/website-services.jpg') }}" alt="Website Services">
+                    <img src="{{ ('static/images/website-services.jpg') }}" alt="Website Services" class="rounded-lg">
                 </a>
             </div>
         </div>
