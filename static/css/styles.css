@@ -1109,6 +1109,10 @@ video {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
+.focus\:opacity-50:focus {
+  opacity: 0.5;
+}
+
 .active\:bg-white:active {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1152,6 +1156,10 @@ video {
 .active\:text-blue-500:active {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.active\:opacity-50:active {
+  opacity: 0.5;
 }
 
 .group:hover .group-hover\:opacity-50 {
