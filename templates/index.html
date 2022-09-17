@@ -15,51 +15,37 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
     <section class="bg-[#1E417B]" x-data="{ open: true }">
-        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse relative">
+        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse">
             <div class="flex items-center justify-center text-gray-200">
                 <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden lg:block md:pr-2 lg:pr-4" x-show=" open"></i>
                 <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden lg:block md:pr-2 lg:pr-4 text-[#1E417B] " x-show="! open"></i>
-
-
                 <div x-show=" open">
-                <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 cursor-pointer" @click="open = ! open">
-                    Website Design
-                </h1>
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 cursor-pointer hover:text-blue-500" @click="open = ! open">
+                        Website Design
+                    </h1>
                 </div>
 
-                
-                <div x-show="! open">
-                <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500">
-                    Website Design
-                </h1>
-                <ul class="space-y-4 py-4 text-gray-200">
-                    <li><i class="fa-solid fa-cubes pr-2 text-blue-500"></i>UX Design Process</li>
-                    <li><i class="fa-solid fa-cubes pr-2 text-blue-500"></i>UX Design Process</li>
-                    <li><i class="fa-solid fa-cubes pr-2 text-blue-500"></i>UX Design Process</li>
-                    <li><i class="fa-solid fa-cubes pr-2 text-blue-500"></i>UX Design Process</li>
-                    <li><i class="fa-solid fa-cubes pr-2 text-blue-500"></i>UX Design Process</li>
-                </ul>
-                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200 cursor-pointer">
-                    <div><a aria-label="Services" class="text-sm sm:text-base flex justify-center items-center" href="">Services</a></div>
+                <div x-show="! open" class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500">
+                        Website Design
+                    </h1>
+                    <ul class="text-sm lg:text-base space-y-4 py-4 pl-5 text-gray-200 list-disc">
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                    </ul>
+                    <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 cursor-pointer flex justify-center items-center text-center">
+                        <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Read More</a></div>
+                    </div>
                 </div>
-                </div>
-                
-
-                
-
                 
             </div>
-            <div class="h-auto w-full md:w-1/2 py-8 lg:py-24 cursor-pointer">
+            <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <div class="flex justify-center" @click="open = ! open">
-                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design" class="rounded-lg">
+                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design" class="rounded-lg cursor-pointer hover:brightness-125">
                 </div>
             </div>
         </div>
@@ -67,17 +53,6 @@
 
 
 
-    <!-- <div x-data="{ open: true }">
-
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0" x-show=" open">
-            Website Design
-        </h1>
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0" x-show="! open">
-            Test
-        </h1>
-
-        <button @click="open = ! open">click</button>
-    </div> -->
 
 
 
