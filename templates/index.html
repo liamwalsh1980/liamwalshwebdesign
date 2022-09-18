@@ -15,19 +15,19 @@
         </div>
     </section>
 
-    <section class="bg-[#1E417B]" x-data="{ open: true }">
+    <section class="bg-[#1E417B]" x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse">
-            <div class="flex items-center justify-center text-gray-200">
-                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden lg:block md:pr-2 lg:pr-4" x-show=" open"></i>
-                <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden lg:block md:pr-2 lg:pr-4 text-[#1E417B] " x-show="! open"></i>
-                <div x-show=" open">
-                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 cursor-pointer hover:text-blue-500" @click="open = ! open">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
+                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden md:block md:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open"></i>
+                <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden md:block md:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
+                <div x-show="! open" class="space-y-1 md:space-y-0">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 group-hover:text-blue-500" @click="open = ! open">
                         Website Design
                     </h1>
+                    <i class="fa-solid fa-chevron-down text-xl md:hidden md:pr-2 lg:pr-4 flex justify-center items-center"></i>
                 </div>
-
-                <div x-show="! open" class="flex flex-col justify-center items-center">
-                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500">
+                <div x-show="open" class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
                         Website Design
                     </h1>
                     <ul class="text-sm lg:text-base space-y-4 py-4 pl-5 text-gray-200 list-disc">
@@ -37,11 +37,10 @@
                         <li>Bullet Point Goes Here</li>
                         <li>Bullet Point Goes Here</li>
                     </ul>
-                    <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 cursor-pointer flex justify-center items-center text-center">
-                        <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Read More</a></div>
+                    <div class="bg-blue-500 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center">
+                        <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Read More</a></div>
                     </div>
                 </div>
-                
             </div>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
                 <div class="flex justify-center" @click="open = ! open">
@@ -51,33 +50,114 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-    <section>
-        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around"
-             x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-            <a href="" class="flex items-center justify-center md:space-x-2 lg:space-x-4">
-                <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0">
-                    Mobile First Design
-                </h1>
-                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden lg:block" :class="hover ? 'rotate-180 ease-in-out duration-700' : ''"></i>
-            </a>
+    <section x-data="{ open: false }">
+        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
+                <div x-show="! open" class="space-y-1 md:space-y-0">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500 group-hover:text-gray-200" @click="open = ! open">
+                        Mobile First Design
+                    </h1>
+                    <i class="fa-solid fa-chevron-down text-xl md:hidden md:pr-2 lg:pr-4 text-blue-500 flex justify-center items-center"></i>
+                </div>
+                <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden md:block md:pl-2 lg:pl-4 text-blue-500 group-hover:text-gray-200" x-show="! open"></i>
+                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden md:block md:pl-2 lg:pl-4 text-black" x-show=" open"></i>
+                
+                <div x-show="open" class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-gray-200 hover:text-blue-500" @click="open = !open">
+                        Mobile First Design
+                    </h1>
+                    <ul class="text-sm lg:text-base space-y-4 py-4 pl-5 text-gray-200 list-disc">
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                    </ul>
+                    <div class="bg-gray-200 text-blue-500 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                        <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Read More</a></div>
+                    </div>
+                </div>
+            </div>
             <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
-                <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design" class="rounded-lg">
-                </a>
+                <div class="flex justify-center" @click="open = ! open">
+                    <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design" class="rounded-lg cursor-pointer hover:brightness-125">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[#1E417B]">
+    <section class="bg-[#1E417B]" x-data="{ open: false }">
+        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
+                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden md:block md:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open"></i>
+                <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden md:block md:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
+                <div x-show="! open" class="space-y-1 md:space-y-0">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 group-hover:text-blue-500" @click="open = ! open">
+                        Website Development
+                    </h1>
+                    <i class="fa-solid fa-chevron-down text-xl md:hidden md:pr-2 lg:pr-4 flex justify-center items-center"></i>
+                </div>
+                <div x-show="open" class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
+                        Website Development
+                    </h1>
+                    <ul class="text-sm lg:text-base space-y-4 py-4 pl-5 text-gray-200 list-disc">
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                        <li>Bullet Point Goes Here</li>
+                    </ul>
+                    <div class="bg-blue-500 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center">
+                        <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
+                <div class="flex justify-center" @click="open = ! open">
+                    <img src="{{ ('static/images/website-development.jpg') }}" alt="Website Development" class="rounded-lg cursor-pointer hover:brightness-125">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section x-data="{ open: false }">
+        <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
+                <div x-show="! open" class="space-y-1 md:space-y-0">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-blue-500 group-hover:text-gray-200" @click="open = ! open">
+                        Website Services
+                    </h1>
+                    <i class="fa-solid fa-chevron-down text-xl md:hidden md:pr-2 lg:pr-4 text-blue-500 flex justify-center items-center"></i>
+                </div>
+                <i class="fa-solid fa-chevron-right md:text-xl lg:text-3xl hidden md:block md:pl-2 lg:pl-4 text-blue-500 group-hover:text-gray-200" x-show="! open"></i>
+                <i class="fa-solid fa-chevron-left md:text-xl lg:text-3xl hidden md:block md:pl-2 lg:pl-4 text-black" x-show=" open"></i>
+                
+                <div x-show="open" class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-gray-200 hover:text-blue-500" @click="open = !open">
+                        Website Services
+                    </h1>
+                    <ul class="text-sm lg:text-base space-y-4 py-4 pl-5 text-gray-200 list-disc">
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                        <li><span class="text-blue-500">Bullet Point Goes Here</span></li>
+                    </ul>
+                    <div class="bg-gray-200 text-blue-500 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                        <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
+                <div class="flex justify-center" @click="open = ! open">
+                    <img src="{{ ('static/images/website-services.jpg') }}" alt="Website Services" class="rounded-lg cursor-pointer hover:brightness-125">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="bg-[#1E417B]">
         <div class="max-w-screen-xl mx-auto py-4 md:py-0 px-8 md:flex md:items-center md:justify-around flex-row-reverse"
              x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
             <a href="" class="flex items-center justify-center md:space-x-2 lg:space-x-4 text-gray-200">
@@ -109,7 +189,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="bg-blue-500">
         <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 lg:flex md:items-center md:justify-between gap-x-12 space-y-8 lg:space-y-0 py-12 lg:py-24">
@@ -154,54 +234,5 @@
         </div>
     </section>
 
-    <!-- <section class="bg-gray-200">
-        <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 lg:flex md:items-center md:justify-between gap-x-12 space-y-8 lg:space-y-0 py-8 lg:py-24">
-            <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
-                <i class="fa-solid fa-cubes text-5xl lg:text-6xl"></i>
-            </div>
-
-            
-            <div class="space-y-4 text-center">
-                <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl">Useful Links</h2>
-                <div class="flex justify-center">
-                    <div class="grid grid-cols-4 gap-4 text-gray-900 lg:w-full">
-                        <div>HTML5</div>
-                        <div>Github</div>
-                        <div>CSS3</div>
-                        <div>Python3</div>
-                        <div>Javascript</div>
-                        <div>Git</div>
-                        <div>Tailwind</div>
-                        <div>AlpineJS</div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
-                <i class="fa-solid fa-cubes text-5xl lg:text-6xl"></i>
-            </div>
-        </div>
-    </section> -->
-
 </div>
-
-<!-- <div>
-    <section class="">
-        <div class="max-w-screen-xl mx-auto px-4 md:px-8 md:flex md:items-center md:justify-around"
-            x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-            <a href="" class="flex items-center justify-center md:space-x-2 lg:space-x-4 text-gray-200">
-                <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0">
-                    Welcome to my site
-                </h1>
-            </a>
-            <div class="h-auto w-full md:w-1/2 py-8 lg:py-24">
-                <a href="" class="flex justify-center">
-                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design">
-                </a>
-            </div>
-        </div>
-    </section>
-</div> -->
-
 {% endblock %}
