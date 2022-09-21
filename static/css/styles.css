@@ -660,6 +660,14 @@ video {
   width: 6rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -858,6 +866,11 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pl-1 {
