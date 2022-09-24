@@ -5,111 +5,125 @@
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">Services</h1>
         <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-3/4 md:w-2/3 lg:w-1/2">With a wide range of web service skills, I'm ready when you are to start building your website. With a broad range of services, no project is too big or small. You can learn more about the services i offer below and if there's any web application service that's not listed please get in touch to discuss your requirements further.</h2>
-        <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">                 
-            <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 cursor-pointer">
-                <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Contact</a></div>
-            </div>
-            <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl pb-1 sm:py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200 cursor-pointer">
-                <div><a aria-label="Portfolio" class="text-sm sm:text-base" href="">Portfolio</a></div>
-            </div>
+        <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">   
+            <a href="" aria-label="Contact">      
+                <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
+                    <div class="text-sm sm:text-base">Contact</div>
+                </div>
+            </a> 
+            <a href="" aria-label="Services">
+                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
+                    <div class="text-sm sm:text-base">Portfolio</div>
+                </div>
+            </a>
         </div>
     </section>
 
-    <section class="space-y-4" id="website-design">
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
-            Website Design
-        </h1>
-        <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
-            <div class="h-auto w-full md:w-1/2">
-                <div class="flex justify-center">
-                    <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design" class="rounded-lg cursor-pointer">
+    <div class="space-y-12 lg:space-y-24">
+        <section class="space-y-4" id="website-design">
+            <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
+                Website Design
+            </h1>
+            <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
+                <div class="h-auto w-full md:w-1/2">
+                    <div class="flex justify-center">
+                        <img src="{{ ('static/images/website-design.jpg') }}" alt="Website Design" class="rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
+                    <div class="text-sm lg:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
+                    </div>
+                    <a href="" aria-label="Contact">
+                        <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                            <div class="text-sm lg:text-base">Contact</a></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
-                <div class="text-sm lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
-                </div>
-                <div class="bg-blue-500 text-gray-200 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
-                    <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Contact</a></div>
-                </div>
-            </div>
+        </section>
+        
+        <div class="flex justify-center items-center lg:hidden">
+            <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-200"></div>
         </div>
-    </section>
-    
-    <div class="flex justify-center items-center py-12 md:py-24">
-        <div class="h-[1px] w-3/4 sm:w-2/3 md:w-1/2 bg-gray-200"></div>
-    </div>
 
-    <section class="space-y-4" id="mobile-first-design">
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
-            Mobile First Design
-        </h1>
-        <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
-            <div class="h-auto w-full md:w-1/2">
-                <div class="flex justify-center">
-                    <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design" class="rounded-lg cursor-pointer">
+        <section class="space-y-4" id="mobile-first-design">
+            <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
+                Mobile First Design
+            </h1>
+            <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
+                <div class="h-auto w-full md:w-1/2">
+                    <div class="flex justify-center">
+                        <img src="{{ ('static/images/mobile-first-design.jpg') }}" alt="Mobile First Design" class="rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
+                    <div class="text-sm lg:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
+                    </div>
+                    <a href="" aria-label="Contact">
+                        <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                            <div class="text-sm lg:text-base">Contact</a></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
-                <div class="text-sm lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
-                </div>
-                <div class="bg-blue-500 text-gray-200 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
-                    <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Contact</a></div>
-                </div>
-            </div>
+        </section>
+
+        <div class="flex justify-center items-center lg:hidden">
+            <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-200"></div>
         </div>
-    </section>
 
-    <div class="flex justify-center items-center py-12 md:py-24">
-        <div class="h-[1px] w-3/4 sm:w-2/3 md:w-1/2 bg-gray-200"></div>
-    </div>
-
-    <section class="space-y-4" id="website-development">
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
-            Website Development
-        </h1>
-        <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
-            <div class="h-auto w-full md:w-1/2">
-                <div class="flex justify-center">
-                    <img src="{{ ('static/images/website-development.jpg') }}" alt="Website Development" class="rounded-lg cursor-pointer">
+        <section class="space-y-4" id="website-development">
+            <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
+                Website Development
+            </h1>
+            <div class="max-w-screen-xl mx-auto p-4 md:flex justify-around space-y-4 lg:space-y-0">
+                <div class="h-auto w-full md:w-1/2">
+                    <div class="flex justify-center">
+                        <img src="{{ ('static/images/website-development.jpg') }}" alt="Website Development" class="rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
+                    <div class="text-sm lg:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
+                    </div>
+                    <a href="" aria-label="Contact">
+                        <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                            <div class="text-sm lg:text-base">Contact</a></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
-                <div class="text-sm lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
-                </div>
-                <div class="bg-blue-500 text-gray-200 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
-                    <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Contact</a></div>
-                </div>
-            </div>
+        </section>
+
+        <div class="flex justify-center items-center lg:hidden">
+            <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-200"></div>
         </div>
-    </section>
-
-    <div class="flex justify-center items-center py-12 md:py-24">
-        <div class="h-[1px] w-3/4 sm:w-2/3 md:w-1/2 bg-gray-200"></div>
-    </div>
-    
-    <section class="space-y-4" id="website-services">
-        <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
-            Website Services
-        </h1>
-        <div class="max-w-screen-xl mx-auto px-4 pt-4 pb-24 md:flex justify-around space-y-4 lg:space-y-0">
-            <div class="h-auto w-full md:w-1/2">
-                <div class="flex justify-center">
-                    <img src="{{ ('static/images/website-services.jpg') }}" alt="Website Services" class="rounded-lg cursor-pointer">
+        
+        <section class="space-y-4" id="website-services">
+            <h1 class="text-2xl lg:text-4xl pt-8 md:pt-0 text-center">
+                Website Services
+            </h1>
+            <div class="max-w-screen-xl mx-auto px-4 pt-4 pb-24 md:flex justify-around space-y-4 lg:space-y-0">
+                <div class="h-auto w-full md:w-1/2">
+                    <div class="flex justify-center">
+                        <img src="{{ ('static/images/website-services.jpg') }}" alt="Website Services" class="rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
+                    <div class="text-sm lg:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
+                    </div>
+                    <a href="" aria-label="Contact">
+                        <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
+                            <div class="text-sm lg:text-base">Contact</a></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center text-gray-200 cursor-pointer text-center w-full md:w-1/3 space-y-4">
-                <div class="text-sm lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula justo id diam pellentesque, et porttitor lacus auctor. Cras blandit ac tellus a varius. Vestibulum aliquam pretium facilisis. Cras bibendum sem sed ex facilisis mattis. 
-                </div>
-                <div class="bg-blue-500 text-gray-200 w-24 lg:w-36 rounded-2xl pb-1 lg:py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-blue-500 active:text-gray-200 flex justify-center items-center text-center">
-                    <div><a aria-label="Contact" class="text-sm lg:text-base" href="">Contact</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>  
 </div>
 
 {% endblock %}
