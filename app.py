@@ -26,6 +26,11 @@ def services():
     return render_template("services.html")
 
 
+@app.route("/portfolio")
+def portfolio():
+    return render_template("portfolio.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
