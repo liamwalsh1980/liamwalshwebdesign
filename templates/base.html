@@ -121,7 +121,7 @@
                 </nav>
             </div>
             <!-- Mobile Dropdown -->
-            <div class="text-center py-8 space-y-4 lg:space-y-0 flex flex-col lg:flex-row text-gray-200" 
+            <div class="text-center md:px-8 py-8 space-y-4 md:space-y-0 flex flex-col md:flex-row text-gray-200" 
                  x-show="! open"
                  x-transition:enter="transition ease-out duration-300"
                  x-transition:enter-start="opacity-0 scale-90"
@@ -130,28 +130,36 @@
                  x-transition:leave-start="opacity-100 scale-100"
                  x-transition:leave-end="opacity-0 scale-90"
                  @click.outside="open = true" aria-labelledby="mobile-dropdown">
-                <div class="w-full gap-y-4 px-4 lg:px-0 flex ">                 
+                <div class="w-full gap-y-4 px-4 md:px-0 flex">   
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-gray-200 active:text-blue-500 cursor-pointer">
-                            <div><a aria-label="About" class="text-sm sm:text-base" href="{{ url_for('about') }}">About</a></div>
-                        </div>
+                        <a aria-label="About" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="{{ url_for('about') }}">
+                            <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
+                                <div>About</div>
+                            </div>
+                        </a>
                     </div>
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-gray-200 active:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Portfolio" class="text-sm sm:text-base" href="{{ url_for('portfolio') }}">Portfolio</a></div>
-                        </div>
+                        <a aria-label="Portfolio" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="{{ url_for('portfolio') }}">
+                            <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
+                                <div>Portfolio</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="w-full gap-y-4 px-4 lg:px-0 flex"> 
+                <div class="w-full gap-y-4 px-4 md:px-0 flex"> 
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-gray-200 active:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Services" class="text-sm sm:text-base" href="{{ url_for('services') }}">Services</a></div>
-                        </div>
+                        <a aria-label="Services" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="{{ url_for('services') }}">
+                            <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
+                                <div>Services</div>
+                            </div>
+                        </a>
                     </div>
                     <div class="flex flex-col items-center w-full">
-                        <div class="bg-blue-500 w-2/3 sm:w-3/4 md:w-2/3 flex items-center justify-center rounded-2xl pb-1 sm:py-1 active:bg-gray-200 active:text-blue-500 cursor-pointer">
-                            <div><a aria-label="Contact" class="text-sm sm:text-base" href="">Contact</a></div>
-                        </div>
+                        <a aria-label="Contact" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="">
+                            <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
+                                <div>Contact</div>
+                            </div>
+                        </a>
                     </div>
                 </ul>
             </div>
