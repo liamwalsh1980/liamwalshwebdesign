@@ -7,7 +7,7 @@
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">About</h1>
         <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">I am a fully qualified website designer and hold a level 5 diploma
             <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">
-                <i class="fa-solid fa-award text-blue-500 hover:text-gray-200 bg-gray-200 hover:bg-blue-500 focus:brightness-125 active:brightness-125 px-2 lg:px-2.5 rounded-full py-1.5 my-[1px]"></i>
+                <i class="fa-solid fa-award text-blue-500 hover:text-[#1E417B] focus:brightness-125 active:brightness-125"></i>
             </a>in Software Development. My main skills focus on  Web Application Development and User Experience Design.</h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">          
             <a href="{{ url_for('contact') }}" aria-label="Contact">      
@@ -50,13 +50,26 @@
             </div>
             <div class="flex flex-col justify-between space-y-6 h-96">
                 <h2 class="text-2xl lg:text-4xl text-center lg:text-left font-semibold lg:font-normal">My Skills</h2>
-                <div class="flex justify-center text-center lg:text-left text-2xl lg:text-4xl">
-                    <div class="flex flex-col justify-center lg:items-start space-y-8">
-                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Complete Design Process</div>
-                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Mobile Application Design</div>
-                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Database Structure</div>
-                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Marketing and SEO</div>
-                        <div class="text-xl flex items-center w-full"><i class="fa-solid fa-check text-3xl pr-8"></i>Domain name and hosting</div>
+                <div class="flex flex-col items-center lg:items-start text-2xl lg:text-4xl space-y-8">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-xl flex items-center w-full">Complete Design Process</div>
+                        <i class="fa-solid fa-check text-3xl"></i>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-xl flex items-center w-full">Mobile Application Design</div>
+                        <i class="fa-solid fa-check text-3xl"></i>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-xl flex items-center w-full">Database Structure</div>
+                        <i class="fa-solid fa-check text-3xl"></i>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-xl flex items-center w-full">Marketing and SEO</div>
+                        <i class="fa-solid fa-check text-3xl"></i>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-xl flex items-center w-full">Domain name and hosting</div>
+                        <i class="fa-solid fa-check text-3xl"></i>
                     </div>
                 </div>
             </div>
@@ -69,7 +82,7 @@
                     Services
                 </h2>
                 <i class="fa-solid fa-cubes text-5xl lg:text-6xl hidden md:block"></i>
-                <p class="text-base lg:text-xl xl:text-2xl text-gray-200 text-center">Offering all services from start to finish with an after service to maintain your site. Using fresh designs built from scratch and using the lates technology.</p>
+                <p class="text-base lg:text-xl xl:text-2xl text-gray-200 text-center">In order to offer the best service, I would recommend an initial consultation to make sure your site is built the way you want it. This gives you the change to express what styling, information and images you want to display. </p>
                 <a href="{{ url_for('services') }}" aria-label="Read More">            
                     <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
@@ -91,7 +104,7 @@
                     Savings
                 </h2>
                 <i class="fa-solid fa-cubes text-5xl lg:text-6xl hidden md:block"></i>
-                <p class="text-base lg:text-xl xl:text-2xl text-gray-200 text-center">Cost effective solutions for all budgets with fixed deadlines to make sure your website is live within a timeline that works for you.</p>
+                <p class="text-base lg:text-xl xl:text-2xl text-gray-200 text-center">With cost effective solutions for all budgets and fixed deadlines that works for you; I will endeavour to exceed your expectations throughout the whole process from the initial consultation through to launch, along with the aftercare I include.</p>
                 <a href="{{ url_for('services') }}" aria-label="Read More">            
                     <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
@@ -108,25 +121,36 @@
     <section class="bg-blue-500">
         <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 lg:flex md:items-center md:justify-between gap-x-12 space-y-8 lg:space-y-0 py-12 lg:py-24">
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
-                <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>            
+                <!-- <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>   -->
+                <img src="{{ ('static/images/graduation-diploma-svgrepo-com.svg') }}" class="h-[60px] w-[60px]">          
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Qualified</h2>
-                <p class="text-center lg:pt-4 leading-normal">My Diploma is Software<br class="md:hidden xl:block"> Development can be viewed <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">here<i class="fa-solid fa-award text-lg pl-1 hover:text-gray-200 focus:text-gray-200 active:text-gray-200"></i></a></p>
+                <p class="text-center lg:pt-4 leading-normal">View my Diploma level 5 in<br class="md:hidden xl:block"> 
+                    Software Development. <i class="fa-solid fa-arrow-right"></i> 
+                    <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">
+                        <i class="fa-solid fa-award text-lg pl-1 hover:text-gray-200 focus:text-gray-200 active:text-gray-200"></i>
+                    </a>
+                </p>
             </div>
             <div class="flex justify-center items-center py-4 lg:hidden">
                 <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-900"></div>
             </div>
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-brands fa-github text-5xl lg:text-6xl"></i>
-                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">My Experience</h2>
-                <p class="text-center lg:pt-4 leading-relaxed">Fresh designs built from<br class="md:hidden xl:block"> scratch using the latest technology</p>
+                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Experience</h2>
+                <p class="text-center lg:pt-4 leading-normal">Take a look at my work<br class="md:hidden xl:block"> 
+                    by viewing my Github account. <i class="fa-solid fa-arrow-right"></i> 
+                    <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank">
+                        <i class="fa-brands fa-github text-lg pl-1 hover:text-gray-200 focus:text-gray-200 active:text-gray-200"></i>
+                    </a>
+                </p>
             </div>
             <div class="flex justify-center items-center py-4 lg:hidden">
                 <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-900"></div>
             </div>
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
-                <i class="fa-regular fa-star text-5xl lg:text-6xl"></i>
-                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Quality</h2>
-                <p class="text-center lg:pt-4 leading-relaxed">Only the best designs and<br class="md:hidden xl:block"> cost effective solutions for all budgets</p>
+                <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>  
+                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Pure Code</h2>
+                <p class="text-center lg:pt-4 leading-relaxed">With the best tech and pure code,<br class="md:hidden xl:block"> your site will work across all browsers.</p>
             </div>
         </div>
     </section>
