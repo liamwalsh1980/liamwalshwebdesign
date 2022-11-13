@@ -78,6 +78,7 @@
                  x-transition:leave-end="opacity-0 scale-90"
                  class="pr-24 xl:pr-32">
                 <ul class="flex space-x-16 xl:space-x-20 font-medium text-base xl:text-lg">  
+                    <li><a aria-label="Home" class="hover:text-gray-200" href="{{ url_for('index') }}">Home</a></li>
                     <li><a aria-label="About" class="hover:text-gray-200" href="{{ url_for('about') }}">About</a></li>
                     <li><a aria-label="Portfolio" class="hover:text-gray-200" href="{{ url_for('portfolio') }}">Portfolio</a></li>
                     <li><a aria-label="Services" class="hover:text-gray-200" href="{{ url_for('services') }}">Services</a></li>
@@ -136,7 +137,14 @@
                  x-transition:leave-start="opacity-100 scale-100"
                  x-transition:leave-end="opacity-0 scale-90"
                  @click.outside="open = true" aria-labelledby="mobile-dropdown">
-                <div class="w-full gap-y-4 px-4 md:px-0 flex">   
+                <div class="w-full gap-y-4 px-4 md:px-0 flex">  
+                    <div class="flex flex-col items-center w-full">
+                        <a aria-label="Home" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="{{ url_for('index') }}">
+                            <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
+                                <div>Home</div>
+                            </div>
+                        </a>
+                    </div> 
                     <div class="flex flex-col items-center w-full">
                         <a aria-label="About" class="text-sm sm:text-base w-2/3 sm:w-1/2 md:w-5/6" href="{{ url_for('about') }}">
                             <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
