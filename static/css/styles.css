@@ -1089,6 +1089,18 @@ video {
   padding-top: 2.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1668,6 +1680,10 @@ video {
 
   .md\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-lg {
