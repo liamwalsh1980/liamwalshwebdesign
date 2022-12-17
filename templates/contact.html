@@ -9,15 +9,16 @@
         <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">Interesting in a service or have a question? Make contact by completing the form or clicking one of the links below. I will endeavour to respond within 24 hours.</h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">   
             <div class="text-center space-x-4">
-                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank"><i class="fa-brands fa-linkedin text-3xl hover:text-[#1E417B] active:text-[#1E417B]"></i></a>
-                <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank"><i class="fa-brands fa-github text-3xl hover:text-[#1E417B] active:text-[#1E417B]"></i></a>
-                <a aria-label="Email" href="mailto: lwalsh_1980@hotmail.co.uk" target="_blank"><i class="fa-solid fa-square-envelope text-3xl hover:text-[#1E417B] active:text-[#1E417B]"></i></a>
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank"><i class="fa-brands fa-linkedin text-3xl hover:brightness-125 hover:scale-125 active:brightness-125"></i></a>
+                <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank"><i class="fa-brands fa-github text-3xl hover:brightness-125 hover:scale-125 active:brightness-125"></i></a>
+                <a aria-label="Email" href="mailto: lwalsh_1980@hotmail.co.uk" target="_blank"><i class="fa-solid fa-square-envelope text-3xl hover:brightness-125 hover:scale-125 active:brightness-125"></i></a>
             </div>
         </div>
-
     </section>
 
-    <section class="max-w-screen-md mx-auto px-4 text-center flex flex-col justify-center items-center space-y-8 bg-blue-500 w-full mb-96 py-8 rounded-lg">
+    
+
+    <section class="max-w-screen-sm mx-auto px-4 text-center flex flex-col justify-center items-center space-y-8 bg-blue-500 w-full mb-32 py-16 rounded-lg text-gray-900">
         <form onsubmit="return sendMail(this);" method="post, get">
             <div class="max-w-screen-xl mx-auto space-y-8 md:space-y-0 flex flex-col md:flex-row justify-center items-center">
                 <div class="space-y-4 flex flex-col items-start" aria-labelledby="contact">
@@ -32,7 +33,7 @@
                         <input id="number" name="number" type="number" minlength="1" maxlength="11" pattern="^[a-zA-Z]{1,100}$" class="validate w-80 px-1 rounded" placeholder="Contact Number*" required>
                     </div>
                     <div class="">
-                        <textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-80 h-24 px-1 rounded" placeholder="Tell me more"></textarea>
+                        <textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-80 h-24 px-1 rounded" placeholder="Tell me more...."></textarea>
                     </div>
                     <div class="text-white">
 
@@ -44,23 +45,28 @@
                         <div class="flex flex-row items-center space-x-4">
                             
                             <input id="" name="subscription" type="radio" value="">
-                            <label>Domain and Hosting</label>
+                            <label>Website Re-design</label>
                         </div>
 
                         <div class="flex flex-row items-center space-x-4">
                             
                             <input id="" name="subscription" type="radio" value="">
-                            <label>Website Re-design</label>
+                            <label>Domain and Hosting</label>
+                        </div>
+
+                        <div class="flex flex-row items-center space-x-4">
+                            
+                            <input id="" name="other" type="radio" value="">
+                            <label>Other (Please add details above)</label>
                         </div>
                     
                     </div>
                     <div class="">
                         <button 
                             type="submit" value="submit"
-                            class="bg-gray-200 text-blue-500 w-24 rounded-2xl py-1 hover:bg-black hover:text-gray-200 active:bg-black active:text-gray-200">
+                            class="w-24 rounded-2xl py-1 font-medium bg-gray-200 text-blue-500 hover:brightness-125 active:scale-110">
                             Submit
                         </button>
-                        
                     </div>
                 </div>
                 
