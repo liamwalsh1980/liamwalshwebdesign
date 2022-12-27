@@ -18,8 +18,8 @@
 
     
 
-    <section class="max-w-screen-sm mx-auto px-4 text-center flex flex-col justify-center items-center space-y-8 bg-blue-500 w-full mb-32 py-16 rounded-lg text-gray-900">
-        <form onsubmit="return sendMail(this);" method="post, get">
+    <section class="max-w-screen-sm mx-auto px-4 text-center flex flex-col justify-center items-center space-y-8 bg-blue-500 w-full mb-32 py-16 rounded-lg text-gray-900" id="contact-form">
+        <form onsubmit="return sendMail(this);" method="POST, GET">
             <div class="max-w-screen-xl mx-auto space-y-8 md:space-y-0 flex flex-col md:flex-row justify-center items-center">
                 <div class="space-y-4 flex flex-col items-start" aria-labelledby="contact">
                     
@@ -38,25 +38,25 @@
                     <div class="text-white">
 
                         <div class="flex flex-row items-center space-x-4">
-                            <input id="" name="subscription" type="radio" value="">
+                            <input id="option_1" name="option_1" type="radio">
                             <label>New Website Design</label>
                         </div>
 
                         <div class="flex flex-row items-center space-x-4">
                             
-                            <input id="" name="subscription" type="radio" value="">
+                            <input id="option_2" name="option_2" type="radio">
                             <label>Website Re-design</label>
                         </div>
 
                         <div class="flex flex-row items-center space-x-4">
                             
-                            <input id="" name="subscription" type="radio" value="">
+                            <input id="option_3" name="option_3" type="radio">
                             <label>Domain and Hosting</label>
                         </div>
 
                         <div class="flex flex-row items-center space-x-4">
                             
-                            <input id="" name="other" type="radio" value="">
+                            <input id="option_4" name="option_4" type="radio">
                             <label>Other (Please add details above)</label>
                         </div>
                     
@@ -69,9 +69,30 @@
                         </button>
                     </div>
                 </div>
-                
             </div>
-           
+            <div class="modal" tabindex="-1" id="modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-blue-500 text-white border border-white">
+                        <div class="modal-header">
+                            <div class="modal-title w-full flex items-center justify-center">
+                                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
+                                    <h1 class="lg:text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100">Pure Code</h1>
+                                    <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 opacity-80 group-hover:opacity-100"></i>
+                                    <h1 class="lg:text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100 sm:pt-12 sm:pl-2">Web Design</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-message">Thank you for project request.<br> You will receive an email or call very soon to dicuss further</p>
+                        </div>
+                        <div class="modal-footer flex items-center justify-center">
+                            <button type="button" class="bg-gray-200 text-blue-500 hover:brightness-125 active:scale-110 py-1 px-4 rounded-full"
+                                    data-bs-dismiss="modal" id="closing-btn">Close</button>
+                                 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form> 
     </section>
 
