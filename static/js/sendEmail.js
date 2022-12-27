@@ -1,4 +1,20 @@
 function sendMail(contactForm) {
+    emailjs.send("service_bv0x1rb", "purecode", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.email.value,
+        "contact_number": contactForm.number.value,
+        "more_information": contactForm.message.value
+    })
+    .then(
+        function (response) {
+            console.log("SUCCESS", response);
+        },
+        function (error) {
+            console.log("FAILED", error);
+        });
+}
+
+function sendMail(contactForm) {
     var modal = document.getElementById("modal");
 
     emailjs.send("service_bv0x1rb", "purecode", {
@@ -10,7 +26,7 @@ function sendMail(contactForm) {
     .then(
         function (response) {
             console.log("SUCCESS", response);
-            $(".modal-message").text("Thank you for project request " + contactForm.name.value + ". You will receive an email or call very soon to dicuss further");
+            $(".modal-message").text("Thank you for project request " + contactForm.name.value + ". You will receive an email or call very soon to dicuss your requirements further.");
             modal.style.display = "block";
             $("#closing-btn").click(function () {
                 location.reload();
