@@ -18,18 +18,24 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/> -->
+
     <!-- Tailwind CSS and custom CSS scripts -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+
     <!-- Head tab icon using https://gauger.io/fonticon/-->
     <link rel="icon" type="image/ico" href="static/images/favicon.ico" />
+    
     <title>Pure Code Web Design</title>
+
     <!-- Alpine JS script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" 
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Local JS script for sendEmail.js -->
     <script src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){

@@ -16,7 +16,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET"])
 def contact():
     return render_template("contact.html")
 

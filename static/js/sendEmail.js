@@ -5,11 +5,7 @@ function sendMail(contactForm) {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
         "contact_number": contactForm.number.value,
-        "more_information": contactForm.message.value,
-        "new_website": contactForm.option_1.value,
-        "re-design": contactForm.option_2.value,
-        "domain_and_hosting": contactForm.option_.value,
-        "other": contactForm.option_4.value
+        "more_information": contactForm.message.value
     })
     .then(
         function (response) {
