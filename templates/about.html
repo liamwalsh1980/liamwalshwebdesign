@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-<div class="">
+<div>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">About</h1>
         <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">I am a fully qualified website designer and hold a level 5 diploma
@@ -158,17 +157,23 @@
             and a cost-effective solution.
         </h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">   
-            <a href="{{ url_for('contact') }}" aria-label="Contact">            
+            <!-- <a href="{{ url_for('contact') }}" aria-label="Contact">            
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
                     <div class="text-sm sm:text-base">Contact</div>
                 </div>
-            </a>  
+            </a>   -->
             <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
-                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
+                <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
                     <div class="text-sm sm:text-base">Portfolio</div>
                 </div>
             </a>
+            <!-- <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
+                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
+                    <div class="text-sm sm:text-base">Portfolio</div>
+                </div>
+            </a> -->
         </div>
     </section>
 </div>
+
 {% endblock %}
