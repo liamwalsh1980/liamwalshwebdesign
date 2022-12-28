@@ -26,7 +26,7 @@ function sendMail(contactForm) {
     .then(
         function (response) {
             console.log("SUCCESS", response);
-            $(".modal-message").text("Thank you for project request " + contactForm.name.value + ". You will receive an email or call very soon to dicuss your requirements further.");
+            $(".modal-message").text("Thank you for getting in touch " + contactForm.name.value + ". You will receive an email or call very soon to dicuss your requirements further.");
             modal.style.display = "block";
             $("#closing-btn").click(function () {
                 location.reload();
