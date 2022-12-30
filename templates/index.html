@@ -4,7 +4,7 @@
 <div>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">Welcome to Pure Code</h1>
-        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">In need of a new website, upgrade or site maintenance? <br class="hidden md:block">Look no further, Pure Code can offer you the right service.</h2>
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">In need of a new website, upgrade or site maintenance? <br class="hidden sm:block">Look no further, Pure Code can offer you the right service.</h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">
             <a href="{{ url_for('contact') }}" aria-label="Contact">
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
@@ -19,10 +19,10 @@
         </div>
     </section>
     <section class="bg-[#1E417B]" x-data="{ open: false }">
-        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-around flex-row-reverse">
+        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly flex-row-reverse">
             <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
-                <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
+                <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl sm:hidden lg:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
                         Website Design
@@ -55,7 +55,7 @@
         </div>
     </section>
     <section x-data="{ open: false }">
-        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-around">
+        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly">
             <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
@@ -64,7 +64,7 @@
                     <i class="fa-solid fa-chevron-down text-xl sm:hidden sm:pr-2 lg:pr-4 flex justify-center items-center" @click="open = ! open"></i>
                 </div>
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-gray-200 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
-                <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-black" x-show=" open"></i>
+                <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl sm:hidden lg:block sm:pl-2 lg:pl-4 text-black" x-show=" open"></i>
                 
                 <div x-show="open" class="flex flex-col justify-center items-center">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
@@ -92,10 +92,10 @@
         </div>
     </section>
     <section class="bg-[#1E417B]" x-data="{ open: false }">
-        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-around flex-row-reverse">
+        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly flex-row-reverse">
             <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
-                <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block md:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
+                <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
                         Software Development
@@ -128,7 +128,7 @@
         </div>
     </section>
     <section x-data="{ open: false }">
-        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-around">
+        <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly">
             <div class="flex items-center justify-center text-gray-200 cursor-pointer group">
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
@@ -137,7 +137,7 @@
                     <i class="fa-solid fa-chevron-down text-xl sm:hidden sm:pr-2 lg:pr-4 flex justify-center items-center" @click="open = ! open"></i>
                 </div>
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-gray-200 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
-                <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-black" x-show=" open"></i>
+                <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pl-1 lg:pl-4 text-black" x-show=" open"></i>
                 
                 <div x-show="open" class="flex flex-col justify-center items-center">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
@@ -185,7 +185,6 @@
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-regular fa-star text-5xl lg:text-6xl"></i>
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Quality</h2>
-                <!-- <p class="text-center flex justify-center lg:pt-4 leading-relaxed">The best designs as well as cost<br class="md:hidden xl:block">effective solutions to suit all budgets.</p> -->
                 <p class="text-center flex justify-center leading-relaxed">Its all in the detail and with <br class="lg:hidden xl:block">Pure Code you're guaranteed quality</p>
             </div>
         </div>
