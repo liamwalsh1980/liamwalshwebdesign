@@ -21,7 +21,7 @@
 
     <section class="bg-[#1E417B]" x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly flex-row-reverse">
-            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 xl:w-1/3">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3">
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden lg:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
@@ -30,11 +30,11 @@
                     </h1>
                     <i class="fa-solid fa-chevron-down text-xl sm:hidden sm:pr-2 lg:pr-4 flex justify-center items-center" @click="open = ! open"></i>
                 </div>
-                <div x-show="open" class="flex flex-col justify-center items-center">
+                <div x-show="open" class="flex flex-col justify-center items-center space-y-3 md:space-y-4 lg:space-y-6">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
                         Website Design
                     </h1>
-                    <ul class="text-sm lg:text-base space-y-4 pt-4 list-none text-center">
+                    <ul class="text-sm lg:text-base xl:text-lg list-none text-center space-y-2 md:space-y-3 lg:space-y-4">
                         <li><span class="text-gray-200">Full design process</li></span>
                         <li><span class="text-gray-200">Unique designs</li></span>
                         <li><span class="text-gray-200">User experience focused</li></span>
@@ -48,7 +48,7 @@
                     </a> -->
                 </div>
             </div>
-            <div class="h-auto w-full sm:w-3/5 xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
+            <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
                     <img src="{{ ('static/images/website_design.jpg') }}" alt="Website Design" class="cursor-pointer hover:brightness-125 rounded">
                 </div>
@@ -58,7 +58,7 @@
 
     <section x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly">
-            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 xl:w-1/3">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3">
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
                         Mobile First Design
@@ -68,11 +68,11 @@
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-gray-200 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden lg:block sm:pl-2 lg:pl-4 text-black" x-show=" open"></i>
                 
-                <div x-show="open" class="flex flex-col justify-center items-center">
+                <div x-show="open" class="flex flex-col justify-center items-center space-y-3  md:space-y-4 lg:space-y-6">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
                         Mobile First Design
                     </h1>
-                    <ul class="text-sm lg:text-base space-y-4 pt-4 text-gray-200 list-none text-center">
+                    <ul class="text-sm lg:text-base xl:text-lg list-none text-gray-200 text-center space-y-2 md:space-y-3 lg:space-y-4">
                         <li><span class="text-gray-200">Smallest devices first</li></span>
                         <li><span class="text-gray-200">Prioritising design for mobiles</li></span>
                         <li><span class="text-gray-200">Progressive Advancement</li></span>
@@ -86,7 +86,7 @@
                     </a> -->
                 </div>
             </div>
-            <div class="h-auto w-full sm:w-3/5 xl:w-2/3 py-8 sm:py-4  lg:py-12 xl:py-16 sm:px-4 lg:px-8">
+            <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4  lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
                     <img src="{{ ('static/images/mobile_first_design.jpg') }}" alt="Mobile First Design" class="cursor-pointer hover:brightness-125 rounded">
                 </div>
@@ -96,7 +96,7 @@
 
     <section class="bg-[#1E417B]" x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly flex-row-reverse">
-            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 xl:w-1/3">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3">
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
@@ -105,11 +105,11 @@
                     </h1>
                     <i class="fa-solid fa-chevron-down text-xl sm:hidden sm:pr-2 lg:pr-4 flex justify-center items-center" @click="open = ! open"></i>
                 </div>
-                <div x-show="open" class="flex flex-col justify-center items-center">
+                <div x-show="open" class="flex flex-col justify-center items-center space-y-3  md:space-y-4 lg:space-y-6">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
                         Software Development
                     </h1>
-                    <ul class="text-sm lg:text-base space-y-4 pt-4 list-none text-center">
+                    <ul class="text-sm lg:text-base xl:text-lg list-none  space-y-4 text-center space-y-2 md:space-y-3 lg:space-y-4">
                         <li><span class="text-gray-200">Latest software used</li></span>
                         <li><span class="text-gray-200">Database functionality</li></span>
                         <li><span class="text-gray-200">User account access</li></span>
@@ -123,7 +123,7 @@
                     </a> -->
                 </div>
             </div>
-            <div class="h-auto w-full sm:w-3/5 xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
+            <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
                     <img src="{{ ('static/images/website_development.jpg') }}" alt="Website Development" class="cursor-pointer hover:brightness-125 rounded">
                 </div>
@@ -133,7 +133,7 @@
 
     <section x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly">
-            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 xl:w-1/3">
+            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3">
                 <div x-show="! open" class="space-y-1 sm:space-y-0">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
                         Website Services
@@ -143,11 +143,11 @@
                 <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden sm:block sm:pl-2 lg:pl-4 text-gray-200 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
                 <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pl-[3px] lg:pl-4 text-black" x-show=" open"></i>
                 
-                <div x-show="open" class="flex flex-col justify-center items-center">
+                <div x-show="open" class="flex flex-col justify-center items-center space-y-3  md:space-y-4 lg:space-y-6">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
                         Website Services
                     </h1>
-                    <ul class="text-sm lg:text-base space-y-4 pt-4 text-gray-200 list-none text-center">
+                    <ul class="text-sm lg:text-base xl:text-lg list-none text-gray-200 text-center space-y-2 md:space-y-3 lg:space-y-4">
                         <li><span class="text-gray-200">Site secure hosting</span></li>
                         <li><span class="text-gray-200">Domain name sourcing</span></li>
                         <li><span class="text-gray-200">Website health checks</span></li>
@@ -161,7 +161,7 @@
                     </a> -->
                 </div>
             </div>
-            <div class="h-auto w-full sm:w-3/5 xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
+            <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
                     <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" class="cursor-pointer hover:brightness-125 rounded">
                 </div>
