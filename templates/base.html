@@ -106,7 +106,7 @@
             <div class="py-4 flex justify-between px-4 lg:hidden">
                 <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2">
                     <h1 class="text-base sm:text-2xl font-bold text-gray-200">Pure Code</h1>
-                    <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6"></i>
+                    <i class="fa-solid fa-cubes text-xl sm:text-4xl sm:pt-6"></i>
                     <h1 class="text-base sm:text-2xl font-bold text-gray-200 sm:pt-12 sm:pl-2">Web Design</h1>
                 </a>
                 <nav id="top" class="flex items-center justify-center">
@@ -152,13 +152,20 @@
                  x-transition:leave-start="opacity-100 scale-100"
                  x-transition:leave-end="opacity-0 scale-90"
                  @click.outside="open = true" aria-labelledby="mobile-dropdown">
+
                 <div class="w-full gap-y-4 flex space-x-4 space-x-4">  
+                <!-- <div class="w-full gap-y-4 flex">   -->
                     <div class="flex flex-col items-center w-full">
                         <a aria-label="Home" class="text-sm sm:text-base w-full" href="{{ url_for('index') }}">
                             <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
                                 <div>Home</div>
                             </div>
                         </a>
+                        <!-- <a href="{{ url_for('index') }}" aria-label="Home">
+                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
+                                <div class="text-sm sm:text-base">Home</div>
+                            </div>
+                        </a> -->
                     </div>
                     <div class="flex flex-col items-center w-full">
                         <a aria-label="About" class="text-sm sm:text-base w-full" href="{{ url_for('about') }}">
@@ -166,15 +173,26 @@
                                 <div>About</div>
                             </div>
                         </a>
+                        <!-- <a href="{{ url_for('about') }}" aria-label="About">
+                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
+                                <div class="text-sm sm:text-base">About</div>
+                            </div>
+                        </a> -->
                     </div>
                 </div>
                 <div class="w-full gap-y-4 flex space-x-4 space-x-4"> 
+                <!-- <div class="w-full gap-y-4 flex">  -->
                     <div class="flex flex-col items-center w-full">
                         <a aria-label="Portfolio" class="text-sm sm:text-base w-full" href="{{ url_for('portfolio') }}">
                             <div class="bg-blue-500 flex items-center justify-center rounded-2xl active:bg-gray-200 active:text-blue-500 py-1">
                                 <div>Portfolio</div>
                             </div>
                         </a>
+                        <!-- <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
+                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
+                                <div class="text-sm sm:text-base">Portfolio</div>
+                            </div>
+                        </a> -->
                     </div>
                     <div class="flex flex-col items-center w-full">
                         <a aria-label="Contact" class="text-sm sm:text-base w-full" href="{{ url_for('contact') }}">
@@ -182,6 +200,11 @@
                                 <div>Contact</div>
                             </div>
                         </a>
+                        <!-- <a href="{{ url_for('contact') }}" aria-label="Contact">
+                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
+                                <div class="text-sm sm:text-base">Contact</div>
+                            </div>
+                        </a> -->
                     </div>
                 </div>
             </div>
