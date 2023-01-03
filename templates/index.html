@@ -21,14 +21,19 @@
 
     <section class="bg-[#1E417B]" x-data="{ open: false }">
         <div class="max-w-screen-xl mx-auto p-4 sm:py-0 sm:flex sm:items-center sm:justify-evenly flex-row-reverse">
-            <div class="flex items-center justify-center text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3">
-                <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
-                <i class="fa-solid fa-chevron-right sm:text-xl lg:text-3xl hidden lg:block sm:pr-2 lg:pr-4 text-[#1E417B]" x-show=" open"></i>
-                <div x-show="! open" class="space-y-1 sm:space-y-0">
-                    <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
-                        Website Design
-                    </h1>
-                    <i class="fa-solid fa-chevron-down text-xl sm:hidden sm:pr-2 lg:pr-4 flex justify-center items-center" @click="open = ! open"></i>
+            <div class="text-gray-200 cursor-pointer group sm:w-2/5 2xl:w-1/3 space-y-2 lg:space-y-4">
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-chevron-left sm:text-xl lg:text-3xl hidden sm:block sm:pr-2 lg:pr-4 group-hover:text-blue-500" x-show="! open" @click="open = ! open"></i>
+                    <div x-show="! open" class="space-y-2 sm:space-y-0">
+                        <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 group-hover:text-blue-500" @click="open = ! open">
+                            Website Design
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center" x-show="! open">
+                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
+                        <div class="text-xs lg:text-base">Read More</div>
+                    </div>
                 </div>
                 <div x-show="open" class="flex flex-col justify-center items-center space-y-3 md:space-y-4 lg:space-y-6">
                     <h1 class="text-2xl sm:text-xl lg:text-3xl xl:text-4xl pt-8 sm:pt-0 text-blue-500 hover:text-gray-200" @click="open = !open">
@@ -41,11 +46,6 @@
                         <li><span class="text-gray-200">Fast and efficent styling</li></span>
                         <li><span class="text-gray-200">Cost effective designs</li></span>
                     </ul>
-                    <!-- <a href="https://liamwalshwebdesign.herokuapp.com/services#website-design" aria-label="Website Design">
-                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center">
-                            <div class="text-sm lg:text-base">Read More</div>
-                        </div>
-                    </a> -->
                 </div>
             </div>
             <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
