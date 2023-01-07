@@ -46,7 +46,7 @@
 <body class="bg-black text-blue-500 flex flex-col min-h-screen">
     <header class="border-b border-black z-10">
         <!-- Main Navbar -->
-        <div x-data="{ open: false }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
+        <div x-data="{ open: true }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
             <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
                 <h1 class="text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100">Pure Code</h1>
                 <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 opacity-80 group-hover:opacity-100"></i>
