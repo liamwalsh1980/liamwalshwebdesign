@@ -46,7 +46,7 @@
 <body class="bg-black text-blue-500 flex flex-col min-h-screen">
     <header class="border-b border-black z-10">
         <!-- Main Navbar -->
-        <div x-data="{ open: true }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
+        <div x-data="{ open: false }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
             <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
                 <h1 class="text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100">Pure Code</h1>
                 <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 opacity-80 group-hover:opacity-100"></i>
@@ -93,11 +93,38 @@
                  x-transition:leave-end="opacity-0 scale-90"
                  class="pr-24 xl:pr-32">
                 <ul class="flex space-x-16 xl:space-x-20 font-medium text-base xl:text-lg">  
-                    <li><a aria-label="Home" class="text-blue-500 hover:text-[#9DC1FB]" href="{{ url_for('index') }}">Home</a></li>
-                    <li><a aria-label="About" class="text-blue-500 hover:text-[#9DC1FB]" href="{{ url_for('about') }}">About</a></li>
-                    <li><a aria-label="Portfolio" class="text-blue-500 hover:text-[#9DC1FB]" href="{{ url_for('portfolio') }}">Portfolio</a></li>
-                    <!-- <li><a aria-label="Services" class="text-blue-500 hover:text-[#9DC1FB]" href="{{ url_for('services') }}">Services</a></li> -->
-                    <li><a aria-label="Contact" class="text-blue-500 hover:text-[#9DC1FB]" href="{{ url_for('contact') }}">Contact</a></li>
+                    <a aria-label="Home" href="{{ url_for('index') }}" class="text-blue-500 hover:text-[#9DC1FB]">
+                        <li class="flex justify-center items-start space-x-2" x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-up text-base" 
+                               :class="hover ? '-rotate-90 ease-in-out duration-700 pt-1' : 'ease-in-out duration-700 pt-1'">
+                            </i>
+                        </li>
+                    </a>
+                    <a aria-label="About" href="{{ url_for('about') }}" class="text-blue-500 hover:text-[#9DC1FB]">
+                        <li class="flex justify-center items-start space-x-2" x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
+                            <span>About</span>
+                            <i class="fa-solid fa-chevron-up text-base" 
+                               :class="hover ? '-rotate-90 ease-in-out duration-700 pt-1' : 'ease-in-out duration-700 pt-1'">
+                            </i>
+                        </li>
+                    </a>
+                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="text-blue-500 hover:text-[#9DC1FB]">
+                        <li class="flex justify-center items-start space-x-2" x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
+                            <span>Portfolio</span>
+                            <i class="fa-solid fa-chevron-up text-base" 
+                               :class="hover ? '-rotate-90 ease-in-out duration-700 pt-1' : 'ease-in-out duration-700 pt-1'">
+                            </i>
+                        </li>
+                    </a>
+                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="text-blue-500 hover:text-[#9DC1FB]">
+                        <li class="flex justify-center items-start space-x-2" x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
+                            <span>Contact</span>
+                            <i class="fa-solid fa-chevron-up text-base" 
+                               :class="hover ? '-rotate-90 ease-in-out duration-700 pt-1' : 'ease-in-out duration-700 pt-1'">
+                            </i>
+                        </li>
+                    </a>
                 </ul>
             </nav>
         </div>
