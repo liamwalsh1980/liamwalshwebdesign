@@ -4,10 +4,10 @@
 <div>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">About</h1>
-        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">I am a fully qualified website designer and hold a level 5 diploma
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">I am a fully qualified website designer with a level 5 diploma
             <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">
                 <i class="fa-solid fa-award text-blue-500 hover:brightness-110 focus:brightness-125 active:brightness-125"></i>
-            </a>in Software Development. My main skills focus on  Web Application Development and User Experience Design.</h2>
+            </a>in Software Development. My main skills focus on Web Application Development and User Experience Design.</h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">          
             <a href="{{ url_for('contact') }}" aria-label="Contact">      
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
@@ -26,22 +26,46 @@
             <div class="flex flex-col items-center justify-around sm:justify-center lg:space-y-4 h-96 sm:h-72 lg:h-96">
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200">Tech</h2>
                 <div class="flex py-8 sm:py-6 space-x-8 lg:space-x-16">
-                    <a href="https://stripe.com/gb" aria-label="Stripe" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-cc-stripe text-5xl lg:text-6xl "></i></a>
-                    <a href="https://laravel.com" aria-label="Laravel" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-laravel text-5xl lg:text-6xl "></i></a>
-                    <a href="https://python.org" aria-label="Python3" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-python text-5xl lg:text-6xl "></i></a>
-                    <a href="https://www.mongodb.com" aria-label="Databases" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-solid fa-database text-5xl lg:text-6xl "></i></a>
+                    <a href="https://stripe.com/gb" aria-label="Stripe" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-cc-stripe text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://laravel.com" aria-label="Laravel" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-laravel text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://python.org" aria-label="Python3" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-python text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://www.mongodb.com" aria-label="Databases" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-solid fa-database text-5xl lg:text-6xl"></i>
+                    </a>
                 </div>
                 <div class="flex py-8 sm:py-6 space-x-8 lg:space-x-16">
-                    <a href="https://fontawesome.com/" aria-label="Font Awesome" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-solid fa-font-awesome text-5xl lg:text-6xl "></i></a>
-                    <a href="https://en.wikipedia.org/wiki/HTML5" aria-label="HTML5" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-html5 text-5xl lg:text-6xl "></i></a>
-                    <a href="https://getbootstrap.com" aria-label="Bootstrap5" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-bootstrap text-5xl lg:text-6xl "></i></a>
-                    <a href="https://aws.amazon.com" aria-label="AWS" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-aws text-5xl lg:text-6xl"></i></a>
+                    <a href="https://fontawesome.com/" aria-label="Font Awesome" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-solid fa-font-awesome text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/HTML5" aria-label="HTML5" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-html5 text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://getbootstrap.com" aria-label="Bootstrap5" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-bootstrap text-5xl lg:text-6xl"></i>
+                    </a>
+                    <a href="https://aws.amazon.com" aria-label="AWS" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-aws text-5xl lg:text-6xl"></i>
+                    </a>
                 </div>
                 <div class="flex pt-8 sm:pt-6 space-x-8 lg:space-x-16">
-                    <a href="https://en.wikipedia.org/wiki/CSS" aria-label="CSS3" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-css3-alt text-5xl lg:text-6xl "></i></a>
-                    <a href="https://www.javascript.com" aria-label="Javascript" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-js text-5xl lg:text-6xl "></i></a>
-                    <a href="https://www.php.net" aria-label="PHP" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-php text-5xl lg:text-6xl "></i></a>
-                    <a href="https://github.com" aria-label="Github" target="_blank" class="hover:text-gray-200 active:text-blue-500"><i class="fa-brands fa-github text-5xl lg:text-6xl "></i></a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" aria-label="CSS3" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-css3-alt text-5xl lg:text-6xl "></i>
+                    </a>
+                    <a href="https://www.javascript.com" aria-label="Javascript" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-js text-5xl lg:text-6xl "></i>
+                    </a>
+                    <a href="https://www.php.net" aria-label="PHP" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-php text-5xl lg:text-6xl "></i>
+                    </a>
+                    <a href="https://github.com" aria-label="Github" target="_blank" class="hover:text-gray-200 active:text-blue-500">
+                        <i class="fa-brands fa-github text-5xl lg:text-6xl "></i>
+                    </a>
                 </div>
             </div>
             <div class="flex justify-center items-center py-12 md:py-6">
@@ -81,7 +105,10 @@
                     Services
                 </h2>
                 <i class="fa-solid fa-users-gear text-5xl lg:text-6xl hidden sm:block"></i>
-                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">In order to offer the best service, I would recommend an initial consultation to make sure your site is built the way you want it. This gives you the change to express what styling, information and images you want to display. </p>
+                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">
+                    In order to offer the best service, I would recommend an initial consultation to make sure your site is built the way you want it. 
+                    This gives you the change to express what styling, information and images you want to display.
+                </p>
                 <!-- <a href="{{ url_for('services') }}" aria-label="Read More">            
                     <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
@@ -108,7 +135,10 @@
                     Savings
                 </h2>
                 <i class="fa-solid fa-piggy-bank text-5xl lg:text-6xl hidden sm:block"></i>
-                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">With cost effective solutions for all budgets and fixed deadlines that works for you; I will endeavour to exceed your expectations throughout the whole process from the initial consultation through to launch, along with the aftercare I include.</p>
+                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">
+                    With cost effective solutions for all budgets and fixed deadlines that works for you; I will endeavour to exceed your expectations 
+                    throughout the whole process from the initial consultation through to launch, along with the aftercare which is included.
+                </p>
                 <!-- <a href="{{ url_for('services') }}" aria-label="Read More">            
                     <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
@@ -132,8 +162,8 @@
                 <!-- <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>   -->
                 <img src="{{ ('static/images/graduation-diploma-svgrepo-com.svg') }}" class="h-[60px] w-[60px]">          
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Qualified</h2>
-                <p class="text-center leading-normal">View my Diploma level 5 in<br class="md:hidden xl:block"> 
-                    Software Development. <i class="fa-solid fa-arrow-right"></i> 
+                <p class="text-center leading-normal">View my level 5 Diploma qualification<br class="md:hidden xl:block"> 
+                    in Software Development. <i class="fa-solid fa-arrow-right"></i> 
                     <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">
                         <i class="fa-solid fa-award text-lg pl-1 hover:text-gray-300 focus:text-gray-200 active:text-gray-200"></i>
                     </a>

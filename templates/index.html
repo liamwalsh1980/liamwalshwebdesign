@@ -4,7 +4,9 @@
 <div>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">Welcome to Pure Code</h1>
-        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">In need of a new website, upgrade or site maintenance? <br class="hidden sm:block">Look no further, Pure Code can offer you the right service.</h2>
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">
+            In need of a new website, upgrade or site maintenance? <br class="hidden sm:block">Look no further, Pure Code can offer you the right service.
+        </h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">
             <a href="{{ url_for('contact') }}" aria-label="Contact">
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
@@ -31,7 +33,8 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center py-2.5 xl:py-4" x-show="! open">
-                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
+                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
                         <div class="text-xs lg:text-base">Read More</div>
                     </div>
                 </div>
@@ -48,7 +51,8 @@
                     </ul>
                 
                     <div class="flex items-center justify-center" x-show=" open">
-                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
+                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                    active:text-blue-500 flex justify-center items-center text-center" 
                              @click="open = ! open">
                             <div class="text-xs lg:text-base">Close</div>
                         </div>
@@ -57,7 +61,8 @@
             </div>
             <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
-                    <img src="{{ ('static/images/website_design.jpg') }}" alt="Website Design" class="cursor-pointer hover:brightness-125 rounded-full hue-rotate-30 hover:brightness-125">
+                    <img src="{{ ('static/images/website_design.jpg') }}" alt="Website Design" 
+                         class="cursor-pointer hover:brightness-125 rounded-full hue-rotate-30 hover:brightness-125">
                 </div>
             </div>
         </div>
@@ -75,7 +80,8 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center py-2.5 xl:py-4" x-show="! open">
-                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
+                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
                         <div class="text-xs lg:text-base">Read More</div>
                     </div>
                 </div>
@@ -92,7 +98,8 @@
                     </ul>
 
                     <div class="flex items-center justify-center" x-show=" open">
-                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
+                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                    active:text-blue-500 flex justify-center items-center text-center" 
                              @click="open = ! open">
                             <div class="text-xs lg:text-base">Close</div>
                         </div>
@@ -101,7 +108,8 @@
             </div>
             <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
-                    <img src="{{ ('static/images/mobile_first_design.jpg') }}" alt="Mobile First Design" class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-30 hover:brightness-125">
+                    <img src="{{ ('static/images/mobile_first_design.jpg') }}" alt="Mobile First Design" 
+                         class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-30 hover:brightness-125">
                 </div>
             </div>
         </div>
@@ -119,7 +127,8 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center py-2.5 xl:py-4" x-show="! open">
-                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
+                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
                         <div class="text-xs lg:text-base">Read More</div>
                     </div>
                 </div>
@@ -136,7 +145,8 @@
                     </ul>
 
                     <div class="flex items-center justify-center" x-show=" open">
-                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
+                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 
+                                    active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
                              @click="open = ! open">
                             <div class="text-xs lg:text-base">Close</div>
                         </div>
@@ -145,7 +155,8 @@
             </div>
             <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
-                    <img src="{{ ('static/images/software_development.jpg') }}" alt="Software Development" class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-90 hover:brightness-125">
+                    <img src="{{ ('static/images/software_development.jpg') }}" alt="Software Development" 
+                         class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-90 hover:brightness-125">
                 </div>
             </div>
         </div>
@@ -163,7 +174,8 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center py-2.5 xl:py-4" x-show="! open">
-                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
+                    <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 
+                                active:text-blue-500 flex justify-center items-center text-center" @click="open = ! open">
                         <div class="text-xs lg:text-base">Read More</div>
                     </div>
                 </div>
@@ -175,12 +187,13 @@
                         <li><span class="text-gray-200">Site secure hosting</span></li>
                         <li><span class="text-gray-200">Domain name sourcing</span></li>
                         <li><span class="text-gray-200">Website health checks</span></li>
-                        <li><span class="text-gray-200">SEO and Marteting</span></li>
+                        <li><span class="text-gray-200">SEO and Marketing</span></li>
                         <li><span class="text-gray-200">Cost effective packages</span></li>
                     </ul>
 
                     <div class="flex items-center justify-center" x-show=" open">
-                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
+                        <div class="bg-blue-500 w-24 lg:w-32 rounded-2xl py-1 space-x-2 hover:bg-gray-200 hover:text-blue-500 
+                                    active:bg-gray-200 active:text-blue-500 flex justify-center items-center text-center" 
                              @click="open = ! open">
                             <div class="text-xs lg:text-base">Close</div>
                         </div>
@@ -189,7 +202,8 @@
             </div>
             <div class="h-auto w-full sm:w-3/5 2xl:w-2/3 py-8 sm:py-4 lg:py-12 xl:py-16 sm:px-4 lg:px-8">
                 <div class="flex justify-center" @click="open = ! open">
-                    <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-180 hover:brightness-125">
+                    <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" 
+                         class="cursor-pointer hover:brightness-125 rounded-full -hue-rotate-180 hover:brightness-125">
                 </div>
             </div>
         </div>
@@ -200,7 +214,9 @@
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-solid fa-bell-concierge text-5xl lg:text-6xl"></i>
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Services</h2>
-                <p class="text-center flex justify-center leading-relaxed">Offering all web services from start <br class="lg:hidden xl:block">to finish, with on going aftercare.</p>
+                <p class="text-center flex justify-center leading-relaxed">
+                    Offering all web services from start <br class="lg:hidden xl:block">to finish, with on going aftercare.
+                </p>
             </div>
             <!-- <div class="flex justify-center items-center py-4 lg:hidden">
                 <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-[#1E417B]"></div>
@@ -208,7 +224,9 @@
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-solid fa-palette text-5xl lg:text-6xl"></i>
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Customisation</h2>
-                <p class="text-center flex justify-center leading-relaxed">Fresh designs, unique to your <br class="lg:hidden xl:block">business, by using the latest tech.</p>
+                <p class="text-center flex justify-center leading-relaxed">
+                    Fresh designs, unique to your <br class="lg:hidden xl:block">business, by using the latest tech.
+                </p>
             </div>
             <!-- <div class="flex justify-center items-center py-4 lg:hidden">
                 <div class="h-[1px] w-3/4 sm:w-2/3 md:w-3/5 bg-gray-900"></div>
@@ -216,13 +234,18 @@
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-regular fa-star text-5xl lg:text-6xl"></i>
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Quality</h2>
-                <p class="text-center flex justify-center leading-relaxed">Its all in the detail and with <br class="lg:hidden xl:block">Pure Code you're guaranteed quality</p>
+                <p class="text-center flex justify-center leading-relaxed">
+                    Its all in the detail and with <br class="lg:hidden xl:block">Pure Code you're guaranteed quality.
+                </p>
             </div>
         </div>
     </section>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">My Portfolio</h1>
-        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">With web design and development experience across multiple sectors, I’m proud to present my portfolio of work. With All designs created from start to finish, all sites are available to view at a click of a button.</h2>
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">
+            With web design and development experience across multiple sectors, I’m proud to present my portfolio of work. 
+            With All designs created from start to finish, all sites are available to view at a click of a button.
+        </h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16"> 
             <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
