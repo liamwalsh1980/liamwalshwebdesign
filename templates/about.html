@@ -4,7 +4,8 @@
 <div>
     <section class="max-w-screen-xl mx-auto px-4 py-16 lg:py-40 text-center flex flex-col justify-center items-center space-y-8">
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">About</h1>
-        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">I am a fully qualified website designer with a level 5 diploma
+        <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-11/12 md:w-2/3 lg:w-1/2">
+            I am a fully qualified website designer with a level 5 diploma
             <a href="{{ ('static/images/diploma-software-development.pdf') }}" aria-label="Diploma" target="_blank">
                 <i class="fa-solid fa-award text-blue-500 hover:brightness-110 focus:brightness-125 active:brightness-125"></i>
             </a>in Software Development. My main skills focus on Web Application Development and User Experience Design.</h2>
@@ -15,14 +16,16 @@
                 </div>
             </a> 
             <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
-                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
+                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 
+                            hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
                     <div class="text-sm sm:text-base">Portfolio</div>
                 </div>
             </a>
         </div>
     </section>
     <section class="bg-[#1E417B]">
-        <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 flex flex-col sm:flex-row flex-col-reverse justify-evenly gap-x-4 py-12 lg:py-24 text-[#9DC1FB]">
+        <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 flex flex-col sm:flex-row flex-col-reverse 
+                    justify-evenly gap-x-4 py-12 lg:py-24 text-[#9DC1FB]">
             <div class="flex flex-col items-center justify-around sm:justify-center lg:space-y-4 h-96 sm:h-72 lg:h-96">
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200">Tech</h2>
                 <div class="flex py-8 sm:py-6 space-x-8 lg:space-x-16">
@@ -110,19 +113,16 @@
                     This gives you the change to express what styling, information and images you want to display.
                 </p>
                 <!-- <a href="{{ url_for('services') }}" aria-label="Read More">            
-                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
+                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 
+                                active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
                     </div>
                 </a>  -->
             </div>
-            <!-- <div class="h-1/2 w-full sm:w-1/2 lg:w-2/5 pt-8 sm:pt-0 px-4 sm:px-0">
-                <img src="{{ ('static/images/services.jpg') }}" alt="Services" class="rounded-2xl w-full">
-            </div>
-            </div> -->
             <div class="relative h-1/2 w-full sm:w-1/2 lg:w-2/5 p-2">
                 <div class="absolute left-10 right-10 inset-0 bg-[#1895d7] blur-md"></div>
                 <div class="relative">
-                    <img src="{{ ('static/images/services.jpg') }}" alt="Services" class="w-full px-10">
+                    <img src="{{ ('static/images/services.jpg') }}" alt="Services" class="w-full px-10" loading="lazy" fetchpriority="high">
                 </div>
             </div>
         </div>
@@ -140,18 +140,16 @@
                     throughout the whole process from the initial consultation through to launch, along with the aftercare which is included.
                 </p>
                 <!-- <a href="{{ url_for('services') }}" aria-label="Read More">            
-                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500 text-center">
+                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 
+                                active:bg-gray-200 active:text-blue-500 text-center">
                         <div class="text-sm sm:text-base">Read More</div>
                     </div>
                 </a>  -->
             </div>
-            <!-- <div class="h-1/2 w-full sm:w-1/2 lg:w-2/5 pt-8 sm:pt-0 px-4 sm:px-0">
-                <img src="{{ ('static/images/savings.jpg') }}" alt="Savings" class="rounded-2xl w-full">
-            </div> -->
             <div class="relative h-1/2 w-full sm:w-1/2 lg:w-2/5 p-2">
                 <div class="absolute left-10 right-10 inset-0 bg-[#1895d7] blur-md"></div>
                 <div class="relative">
-                    <img src="{{ ('static/images/savings.jpg') }}" alt="Savings" class="w-full px-10">
+                    <img src="{{ ('static/images/savings.jpg') }}" alt="Savings" class="w-full px-10" loading="lazy" fetchpriority="high">
                 </div>
             </div>
         </div>
@@ -159,8 +157,7 @@
     <section class="bg-blue-500">
         <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 lg:flex md:items-center md:justify-between gap-x-12 space-y-16 lg:space-y-0 py-12 lg:py-24">
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
-                <!-- <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>   -->
-                <img src="{{ ('static/images/graduation-diploma-svgrepo-com.svg') }}" class="h-[60px] w-[60px]">          
+                <img src="{{ ('static/images/graduation-diploma-svgrepo-com.svg') }}" class="h-[60px] w-[60px]" loading="lazy" fetchpriority="high">          
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Qualified</h2>
                 <p class="text-center leading-normal">View my level 5 Diploma qualification<br class="md:hidden xl:block"> 
                     in Software Development. <i class="fa-solid fa-arrow-right"></i> 
@@ -188,7 +185,9 @@
             <div class="flex flex-col items-center justify-center text-gray-900 space-y-4 w-full lg:w-1/3">
                 <i class="fa-solid fa-laptop-code text-5xl lg:text-6xl"></i>  
                 <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">Pure Code</h2>
-                <p class="text-center leading-relaxed">With the best tech and pure code,<br class="md:hidden xl:block"> your site will work across all browsers.</p>
+                <p class="text-center leading-relaxed">
+                    With the best tech and pure code,<br class="md:hidden xl:block"> your site will work across all browsers.
+                </p>
             </div>
         </div>
     </section>
@@ -200,21 +199,11 @@
             and a cost-effective solution.
         </h2>
         <div class=" gap-y-4 px-4 lg:px-0 flex text-gray-200 space-x-8 lg:space-x-16">   
-            <!-- <a href="{{ url_for('contact') }}" aria-label="Contact">            
-                <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
-                    <div class="text-sm sm:text-base">Contact</div>
-                </div>
-            </a>   -->
             <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
                 <div class="bg-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
                     <div class="text-sm sm:text-base">Portfolio</div>
                 </div>
             </a>
-            <!-- <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
-                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
-                    <div class="text-sm sm:text-base">Portfolio</div>
-                </div>
-            </a> -->
         </div>
     </section>
 </div>

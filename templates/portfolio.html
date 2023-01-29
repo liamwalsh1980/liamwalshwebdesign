@@ -6,7 +6,8 @@
         <h1 class="text-3xl lg:text-4xl xl:text-5xl font-normal">Portfolio</h1>
     </section>
     <div class="space-y-8 sm:space-y-4 md:space-y-8">
-        <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row md:flex-col lg:flex-row space-y-8 sm:space-y-0 md:space-y-8 lg:space-y-0 sm:gap-x-4 md:gap-x-0 lg:gap-x-8 xl:max-h-[650px]">
+        <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row md:flex-col lg:flex-row space-y-8 sm:space-y-0 md:space-y-8 
+                    lg:space-y-0 sm:gap-x-4 md:gap-x-0 lg:gap-x-8 xl:max-h-[650px]">
             <section class="bg-blue-200 max-w-screen-xl w-full mx-auto px-4 rounded py-4 space-y-4">
                 <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">
                     Live Project:<br class="hidden sm:block md:hidden"> The Courage to be
@@ -15,7 +16,7 @@
                     <div class="h-full w-full md:w-2/3 md:pr-4">
                         <div class="bg-gradient-to-t from-sky-700 to-orange-200 via-gray-400 rounded lg:py-4 p-4 hidden sm:block">
                             <a href="http://www.thecouragetobe.org" aria-label="Services" target="_blank" class="flex justify-center">
-                                <img src="{{ ('static/images/the_courage_to_be.png') }}" alt="Services" 
+                                <img src="{{ ('static/images/the_courage_to_be.png') }}" alt="Services" loading="lazy" fetchpriority="high"
                                      class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                             </a>
                         </div>
@@ -39,7 +40,7 @@
                     </div>
                     <div class="h-full w-full md:w-1/3 sm:hidden md:block bg-gradient-to-t from-sky-700 to-orange-200 via-gray-400 rounded p-4 lg:py-4">
                         <a href="http://www.thecouragetobe.org" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/the_courage_to_be_mobile.png') }}" alt="Services" 
+                            <img src="{{ ('static/images/the_courage_to_be_mobile.png') }}" alt="Services" loading="lazy" fetchpriority="high"
                                  class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                         </a>
                     </div>
@@ -53,11 +54,13 @@
                     <div class="h-full w-full md:w-2/3 md:pr-4">
                         <div class="bg-[#131418] rounded lg:py-4 p-4 hidden sm:block">
                             <a href="http://thebikeshop-project.herokuapp.com" aria-label="Services" target="_blank" class="flex justify-center">
-                                <img src="{{ ('static/images/the_bike_shop.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                                <img src="{{ ('static/images/the_bike_shop.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                     class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                             </a>
                         </div>
                         <p class="text-[#1E417B] lg:px-4 text-center text-sm md:text-xs lg:text-sm pt-4">
-                            An online shop for cyclists of all levels to purchase a new bike, accessories and services. The site allows users to create an account with a username and password to access and make purchases easily and quickly. 
+                            An online shop for cyclists of all levels to purchase a new bike, accessories and services. 
+                            The site allows users to create an account with a username and password to access and make purchases easily and quickly. 
                         </p>
                         <div class="flex justify-center items-center pt-4 space-x-4">   
                             <a href="http://thebikeshop-project.herokuapp.com" aria-label="View Site" target="_blank">
@@ -74,20 +77,25 @@
                     </div>
                     <div class="h-full w-full md:w-1/3 sm:hidden md:block bg-[#131418] rounded p-4 lg:py-4">
                         <a href="http://thebikeshop-project.herokuapp.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/the_bike_shop_mobile.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                            <img src="{{ ('static/images/the_bike_shop_mobile.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                         </a>
                     </div>
                 </div>
             </section>
         </div>
-        <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row md:flex-col lg:flex-row space-y-8 sm:space-y-0 md:space-y-8 lg:space-y-0 sm:gap-x-4 md:gap-x-0 lg:gap-x-8 xl:max-h-[650px]">
+        <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row md:flex-col lg:flex-row space-y-8 sm:space-y-0 md:space-y-8 
+                    lg:space-y-0 sm:gap-x-4 md:gap-x-0 lg:gap-x-8 xl:max-h-[650px]">
             <section class="bg-blue-200 max-w-screen-xl w-full mx-auto px-4 rounded py-4 space-y-4">
-                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">Course Project 3:<br class="hidden sm:block md:hidden"> FilmZone</h2>       
+                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">
+                    Course Project 3:<br class="hidden sm:block md:hidden"> FilmZone
+                </h2>       
                 <div class="flex flex-col md:flex-row flex-col-reverse items-center md:items-start">
                     <div class="h-full w-full md:w-2/3 md:pr-4">
                         <div class="bg-[#d76848] rounded lg:py-4 p-4 hidden sm:block">
                             <a href="https://filmzone-project.herokuapp.com" aria-label="Services" target="_blank" class="flex justify-center">
-                                <img src="{{ ('static/images/filmzone.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                                <img src="{{ ('static/images/filmzone.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                     class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                             </a>
                         </div>
                         <p class="text-[#1E417B] lg:px-4 text-center text-sm md:text-xs lg:text-sm pt-4">
@@ -108,22 +116,27 @@
                     </div>
                     <div class="h-full w-full md:w-1/3 sm:hidden md:block bg-[#d76848] rounded p-4 lg:py-4">
                         <a href="https://filmzone-project.herokuapp.com/" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/filmzone_mobile.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                            <img src="{{ ('static/images/filmzone_mobile.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                         </a>
                     </div>
                 </div>
             </section>
             <section class="bg-blue-200 max-w-screen-xl w-full mx-auto px-4 rounded py-4 space-y-4">
-                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">Course Project 2:<br class="hidden sm:block md:hidden"> The Euro Football Quiz</h2>       
+                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">
+                    Course Project 2:<br class="hidden sm:block md:hidden"> The Euro Football Quiz
+                </h2>       
                 <div class="flex flex-col md:flex-row flex-col-reverse items-center md:items-start">
                     <div class="h-full w-full md:w-2/3 md:pr-4">
                         <div class="bg-[#082d58] roundedlg:py-4 p-4 hidden sm:block">
                             <a href="https://liamwalsh1980.github.io/Milestone-Project-2" aria-label="Services" target="_blank" class="flex justify-center">
-                                <img src="{{ ('static/images/the_euro_football_quiz.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                                <img src="{{ ('static/images/the_euro_football_quiz.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                     class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                             </a>
                         </div>
                         <p class="text-[#1E417B] lg:px-4 text-center text-sm md:text-xs lg:text-sm pt-4">
-                            The Euro Football Quiz is an interactive website that gives users that have an interest in International Football some useful information about the UEFA European Championships going back over 60 years.
+                            The Euro Football Quiz is an interactive website that gives users that have an interest in International 
+                            Football some useful information about the UEFA European Championships going back over 60 years.
                         </p>
                         <div class="flex justify-center items-center pt-4 space-x-4">   
                             <a href="https://liamwalsh1980.github.io/Milestone-Project-2" aria-label="View Site" target="_blank">
@@ -140,7 +153,8 @@
                     </div>
                     <div class="h-full w-full md:w-1/3 sm:hidden md:block bg-[#082d58] rounded p-4 lg:py-4">
                         <a href="https://liamwalsh1980.github.io/Milestone-Project-2" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/the_euro_football_quiz_mobile.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                            <img src="{{ ('static/images/the_euro_football_quiz_mobile.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                         </a>
                     </div>
                 </div>
@@ -153,11 +167,14 @@
                     <div class="h-full w-full md:w-2/3 md:pr-4">
                         <div class="bg-[#274c77] rounded lg:py-4 p-4 hidden sm:block">
                             <a href="https://liamwalsh1980.github.io/Milestone-Project-1" aria-label="Services" target="_blank" class="flex justify-center">
-                                <img src="{{ ('static/images/embrace_autism.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                                <img src="{{ ('static/images/embrace_autism.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                     class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                             </a>
                         </div>
                         <p class="text-[#1E417B] lg:px-4 text-center text-sm md:text-xs lg:text-sm pt-4">
-                            Embrace Autism is a fictional information website that is mainly aimed at parents who have a child with a diagnosis of Autism (ASD – Autistic Spectrum Disorder). The website provides advice and ideas on how to occupy and keep Autistic children happy, engaged and active.
+                            Embrace Autism is a fictional information website that is mainly aimed at parents who have a child 
+                            with a diagnosis of Autism (ASD – Autistic Spectrum Disorder). The website provides advice and ideas 
+                            on how to occupy and keep Autistic children happy, engaged and active.
                         </p>
                         <div class="flex justify-center items-center pt-4 space-x-4">   
                             <a href="https://liamwalsh1980.github.io/Milestone-Project-1" aria-label="View Site" target="_blank">
@@ -174,77 +191,94 @@
                     </div>
                     <div class="h-full w-full md:w-1/3 sm:hidden md:block bg-[#274c77] rounded p-4 lg:py-4">
                         <a href="https://liamwalsh1980.github.io/Milestone-Project-1" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/embrace_autism_mobile.png') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
+                            <img src="{{ ('static/images/embrace_autism_mobile.png') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 lg:hover:scale-105">
                         </a>
                     </div>
                 </div>
             </section>
             <section class="bg-blue-200 max-w-screen-xl w-full mx-auto p-4 lg:p-4 rounded py-4 space-y-4">
-                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">Introducing....<br class="hidden sm:block md:hidden"> Scolmore Group</h2> 
+                <h2 class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal text-[#1E417B] text-center">
+                    Introducing....<br class="hidden sm:block md:hidden"> Scolmore Group
+                </h2> 
                 <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-2">
                     <div class="h-full">
                         <a href="https://www.scolmore.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/click_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/click_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full">
                         <a href="https://scolmoreoem.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/oem_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/oem_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden md:block">
                         <a href="https://www.oviauk.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/ovia_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/ovia_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden md:block">
                         <a href="https://www.espuk.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/esp_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/esp_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full sm:hidden md:block">
                         <a href="https://click-smart.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/clicksmart_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/clicksmart_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full sm:hidden md:block">
                         <a href="https://www.unicrimp.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/unicrimp_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/unicrimp_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden">
                         <a href="https://scolmoredubai.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/dubai_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/dubai_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden">
                         <a href="https://www.ovia.ie" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/ovia-ireland-sites.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/ovia-ireland-sites.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden">
                         <a href="https://www.sangamo.co.uk" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/sangamo_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/sangamo_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden lg:block">
                         <a href="https://ieclock.com" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/ieclock_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/ieclock_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden lg:block">
                         <a href="https://www.clicklitehouse.ie" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/litehouse_site.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/litehouse_site.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                     <div class="h-full hidden lg:block">
                         <a href="https://espi.ie" aria-label="Services" target="_blank" class="flex justify-center">
-                            <img src="{{ ('static/images/espi-sites.jpeg') }}" alt="Services" class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
+                            <img src="{{ ('static/images/espi-sites.jpeg') }}" alt="Services" loading="lazy" fetchpriority="high"
+                                 class="rounded lg:brightness-50 hover:brightness-100 border-2 border-transparent hover:border-0 lg:hover:scale-105">
                         </a>
                     </div>
                 </div>
                 <p class="text-[#1E417B] lg:px-4 text-center text-sm md:text-xs lg:text-sm">
-                    As a fulltime Web Developer at Scolmore Group, I am part of a great team of fellow developers that work on the same projects. Please feel free to visit the latest project – Scolmore Group Websites as we continue to upgrade each Scolmore branded site. The latest site recently launched is Scolmore OEM.  
+                    As a fulltime Web Developer at Scolmore Group, I am part of a great team of fellow developers that work on the same projects. 
+                    Please feel free to visit the latest project – Scolmore Group Websites as we continue to upgrade each Scolmore branded site. 
+                    The latest site recently launched is Scolmore OEM.  
                 </p>
                 <div class="flex justify-center items-center space-x-4">   
                     <a href="https://github.com/scolmore/group_websites" aria-label="View Site" target="_blank">
@@ -267,11 +301,6 @@
                     <div class="text-sm sm:text-base">Contact</div>
                 </div>
             </a>  
-            <!-- <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
-                <div class="bg-gray-200 text-blue-500 w-28 lg:w-36 rounded-2xl py-1 hover:bg-blue-500 hover:text-gray-200 active:bg-blue-500 active:text-gray-200">
-                    <div class="text-sm sm:text-base">Portfolio</div>
-                </div>
-            </a> -->
         </div>
     </section>
 </div>
