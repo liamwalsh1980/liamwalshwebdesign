@@ -1483,10 +1483,6 @@ video {
     padding-top: 1.5rem;
   }
 
-  .sm\:pt-0 {
-    padding-top: 0px;
-  }
-
   .sm\:pt-12 {
     padding-top: 3rem;
   }
@@ -1497,6 +1493,10 @@ video {
 
   .sm\:pr-2 {
     padding-right: 0.5rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 
   .sm\:text-base {
