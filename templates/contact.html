@@ -13,22 +13,26 @@
             </div>
         </div>
     </section>
-    <section class="max-w-screen-sm mx-auto px-4 text-center flex flex-col justify-center items-center space-y-8 bg-blue-500 w-full mb-32 py-8 md:py-16 rounded-lg text-gray-900" id="contact-form">
+    <section class="max-w-screen-sm mx-auto px-4 text-center flex justify-evenly items-center bg-blue-500 w-full mb-32 py-8 md:py-16 rounded-lg text-gray-900" id="contact-form">
         <form onsubmit="return sendMail(this);" method="POST, GET">
             <div class="max-w-screen-xl mx-auto space-y-8 md:space-y-0 flex flex-col md:flex-row justify-center items-center">
                 <div class="space-y-4 flex flex-col items-start" aria-labelledby="contact">
-                    <div class="">
-                        <input id="name" name="name" type="text" minlength="1" maxlength="400" class="validate w-80 md:w-[450px] px-1 rounded" placeholder="Name*" required>
+                    <div>
+                        <div><input id="name" name="name" type="text" minlength="1" maxlength="400" class="validate w-80 sm:w-[450px] px-1 h-8 rounded" placeholder="Name*" required></div>
                     </div>
-                    <div class="">
-                        <input id="email" name="email" type="email" minlength="1" maxlength="100" class="validate w-80 md:w-[450px] px-1 rounded" placeholder="Email Address*" required>
+
+                    <div>
+                        <div><input id="email" name="email" type="email" minlength="1" maxlength="100" class="validate w-80 sm:w-[450px] px-1 h-8 rounded" placeholder="Email Address*" required></div>
                     </div>
-                    <div class="">
-                        <input id="number" name="number" type="number" minlength="1" maxlength="11" pattern="^[a-zA-Z]{1,100}$" class="validate w-80 md:w-[450px] px-1 rounded" placeholder="Contact Number*" required>
+
+                    <div>
+                        <div><input id="number" name="number" type="number" minlength="1" maxlength="11" pattern="^[a-zA-Z]{1,100}$" class="validate w-80 sm:w-[450px] px-1 h-8 rounded" placeholder="Contact Number*" required></div>
                     </div>
-                    <div class="">
-                        <textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-80 md:w-[450px] h-48 px-1 rounded" placeholder="Tell me more...."></textarea>
+
+                    <div>
+                        <div><textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-80 sm:w-[450px] h-48 px-1 rounded" placeholder="Tell me more...."></textarea></div>
                     </div>
+
                     <!-- <div class="text-white">
 
                         <div class="flex flex-row items-center space-x-4">
@@ -56,10 +60,11 @@
                     
                     </div> -->
                     <div class="w-full text-right">
-                        <button 
+                        <button
                             type="submit" value="submit"
                             class="w-24 rounded-2xl py-1 font-medium bg-gray-200 text-blue-500 hover:brightness-125 active:scale-110">
                             Submit
+                            <i class="fa-solid fa-rocket"></i>
                         </button>
                     </div>
                 </div>
@@ -87,7 +92,7 @@
                     </div>
                 </div>
             </div>
-        </form> 
+        </form>
     </section>
 </div>
 
