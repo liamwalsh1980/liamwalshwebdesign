@@ -43,8 +43,129 @@
         })();
     </script>
 </head>
-<body class="bg-black text-white px-20">
-    <header class="border-b border-zinc-800 z-10 h-screen bg-zinc-900 max-w-screen-xl mx-auto">
+<body class="bg-black text-white px-4 md:px-20">
+
+
+    <header class="border-b-4 border-black z-10 h-screen bg-zinc-900 max-w-screen-xl mx-auto">
+
+        <div class="flex justify-between md:grid md:grid-cols-3 content-center pt-4 px-4 texy-base font-normal hidden md:flex">
+
+            <div class="w-14 h-14 place-self-center justify-self-start flex items-center justify-center">
+                <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
+                         class="object-full rounded-full">
+            </div>
+            
+            <div class="bg-stone-800 rounded-full border-1 border-gray-800 shadow-xl items-center justify-center hidden md:flex">
+
+                <ul class="flex justify-center items-center space-x-8 xl:space-x-12 text-sm">  
+                    <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
+                        <li class="flex justify-center items-center space-x-2">
+                            <span>Home</span>
+                        </li>
+                    </a>
+                    <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
+                        <li class="flex justify-center items-center space-x-2">
+                            <span>About</span>
+                        </li>
+                    </a>
+                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
+                        <li class="flex justify-center items-center space-x-2">
+                            <span>Portfolio</span>
+                        </li>
+                    </a>
+                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
+                        <li class="flex justify-center items-center space-x-2">
+                            <span>Contact</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div x-data="{ open: true }" aria-labelledby="mobile-navbar" class=" md:hidden p-4">
+
+            <div class="flex justify-between">
+
+                <div class="w-14 h-14 place-self-center justify-self-start flex items-center justify-center">
+                    <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
+                             class="object-full rounded-full">
+                </div>
+
+                <nav id="top" class="flex items-center justify-center">
+                    <button 
+                        type="button"
+                        @click="open = ! open"
+                        @keydown.escape="open = true">
+                    <span class="sr-only">Open main menu</span>
+                        <svg x-show="open"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg x-show="! open"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="text-center py-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row" 
+                x-show="! open"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90"
+                @click.outside="open = true" aria-labelledby="mobile-dropdown">
+
+                <div class="bg-stone-800 rounded-full border-1 border-gray-800 shadow-xl flex items-center justify-center">
+
+                    <ul class="flex justify-center items-center space-x-8 xl:space-x-12 text-sm w-full py-2">  
+                        <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
+                            <li class="flex justify-center items-center space-x-2">
+                                <span>Home</span>
+                            </li>
+                        </a>
+                        <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
+                            <li class="flex justify-center items-center space-x-2">
+                                <span>About</span>
+                            </li>
+                        </a>
+                        <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
+                            <li class="flex justify-center items-center space-x-2">
+                                <span>Portfolio</span>
+                            </li>
+                        </a>
+                        <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
+                            <li class="flex justify-center items-center space-x-2">
+                                <span>Contact</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        
         
         <!-- Main Navbar -->
 
@@ -137,8 +258,8 @@
 
         <!-- Mobile sidenav -->
 
-        <div x-data="{ open: true }" aria-labelledby="mobile-navbar">
-            <!-- <div class="py-4 flex justify-between px-4 lg:hidden">
+        <!-- <div x-data="{ open: true }" aria-labelledby="mobile-navbar">
+            <div class="py-4 flex justify-between px-4 lg:hidden">
                 <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 active:brightness-125">
                     <h1 class="text-lg sm:text-2xl font-bold text-gray-200">Pure Code</h1>
                     <i class="fa-solid fa-cubes text-xl sm:text-4xl sm:pt-6"></i>
@@ -177,6 +298,8 @@
                     </button>
                 </nav>
             </div> -->
+
+        
 
             <!-- Mobile Dropdown -->
             
@@ -244,7 +367,9 @@
                 </div>
             </div> -->
 
-        </div>
+      <!-- </div> -->
+
+
     </header>
     <main>
 
@@ -254,21 +379,30 @@
     </main>
      <!-- Footer -->
      <div class="bg-zinc-900 max-w-screen-xl mx-auto py-10">
-        <footer class="flex justify-around items-center mt-auto" aria-labelledby="footer">
+        <footer class="md:flex justify-between items-center mt-auto px-4 md:px-20 space-y-4 md:space-y-0" aria-labelledby="footer">
             <div class="text-center space-x-4">
-                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank">
-                    <i class="fa-brands fa-linkedin text-3xl hover:scale-125"></i>
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank" 
+                   class="opacity-50 hover:opacity-100 hover:text-white">
+                    <i class="fa-brands fa-linkedin text-2xl md:text-3xl"></i>
                 </a>
-                <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank">
-                    <i class="fa-brands fa-github text-3xl hover:scale-125"></i>
+
+                <a aria-label="Github" href="https://github.com/liamwalsh1980" target="_blank" 
+                   class="opacity-50 hover:opacity-100 hover:text-white">
+                    <i class="fa-brands fa-github text-2xl md:text-3xl"></i>
                 </a>
-                <a aria-label="Email" href="mailto: liamwalshdeveloper@gmail.com" target="_blank">
-                    <i class="fa-solid fa-square-envelope text-3xl hover:scale-125"></i>
+                <a aria-label="Email" href="mailto: liamwalshdeveloper@gmail.com" target="_blank" 
+                   class="opacity-50 hover:opacity-100 hover:text-white">
+                    <i class="fa-solid fa-square-envelope text-2xl md:text-3xl"></i>
                 </a>
+
             </div>
-            <p class="text-center">&copy 2023 Pure Code Web Design. All rights reserved</p>
+            <p class="text-center opacity-50 text-xs">&copy 2023 Pure Code Web Design. All rights reserved</p>
         </footer>
+
+
+        
     </div>
+
     <!-- JQuery script from https://code.jquery.com/ to enable JQuery usage -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>     
