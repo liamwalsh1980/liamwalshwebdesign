@@ -48,61 +48,74 @@
 
     <header class="h-screen max-w-screen-xl mx-auto border-x border-b border-stone-800 bg-zinc-900 z-10">
 
-            <div class="lg:flex justify-between pt-4 px-4 text-base font-normal hidden">
+        <div class="lg:flex justify-between pt-4 px-4 text-sm font-normal hidden">
 
-                <div class="w-1/3">
-                    <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center lg:items-start space-x-2 hover:text-white">
-                        <h1 class="">Pure Code</h1>
-                        <i class="fa-solid fa-cubes text-2xl sm:pt-4 text-blue-500"></i>
-                        <h1 class="sm:pt-10 sm:pl-1">Web Design</h1>
-                    </a>
-                </div>
-
-              
-                <ul class="flex justify-evenly self-start rounded-full border-1 border-[#2f2f32] bg-[#252529] w-1/3 py-2 text-sm">  
-                    <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
-                        <li>Home</li>
-                    </a>
-                    <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
-                        <li>About</li>
-                    </a>
-                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
-                        <li>Portfolio</li>
-                    </a>
-                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-             
-
-                <div class="flex justify-end w-1/3">
-                    <div class="w-20 h-20">
-                        <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
-                                class="rounded-full border-1 border-[#2f2f32]">
-                    </div>
-                </div>
-                
+            <div class="w-1/3">
+                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center lg:items-start space-x-2 hover:text-white">
+                    <h1 class="text-sm">Pure Code</h1>
+                    <i class="fa-solid fa-cubes text-2xl sm:pt-4 text-blue-500"></i>
+                    <h1 class="text-sm sm:pt-10 sm:pl-1">Web Design</h1>
+                </a>
             </div>
 
 
-
-
-
-        <!-- <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-            <div class="relative py-3 sm:max-w-xl mx-auto">
-                <nav x-data="{ expand: false }">
-                    <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white" @click="expand = !expand">
-                        <span class="sr-only">Open main menu</span>
-                        <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': expand,' -translate-y-1.5': !opeexpandn }"></span>
-                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': expand } "></span>
-                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': expand, ' translate-y-1.5': !opexpanden}"></span>
-                        </div>
-                    </button>
-                </nav>
-            </div>
-        </div> -->
+            <ul class="flex justify-evenly self-start rounded-full ring-1 ring-[#2f2f32] bg-[#252529] w-1/3 py-0 text-sm" x-data="{ selected : 1}">  
+                <li>
+                    <a aria-label="home" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('index') }}">Home
+                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="About" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('about') }}">About
+                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Portfolio" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('portfolio') }}">Portfolio
+                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Contact" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('contact') }}">Contact
+                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                    </a>
+                </li>
             
+            </ul>
+
+
+
+            
+            <!-- <ul class="flex justify-evenly self-start rounded-full ring-1 ring-[#2f2f32] bg-[#252529] w-1/3 py-2 text-sm">  
+                <li>
+                    <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">Home</a>
+                </li>
+            
+                <li>
+                    <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50 relative">About
+                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">Portfolio</a>
+                </li>
+
+                <li>
+                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">Contact</a>
+                </li>
+            </ul> -->
+            
+
+            <div class="flex justify-end w-1/3">
+                <div class="w-20 h-20">
+                    <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
+                            class="rounded-full border-1 border-[#2f2f32]">
+                </div>
+            </div>
+            
+        </div>
+
 
         <div x-data="{ open: true }" aria-labelledby="mobile-navbar" class="lg:hidden p-4">
 
@@ -114,13 +127,14 @@
                 </div>
 
                 <nav id="top" class="flex items-start justify-center">
+
                     <button 
                         type="button"
                         @click="open = ! open"
                         @keydown.escape="open = true">
                     <span class="sr-only">Open main menu</span>
                         <svg x-show="open"
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-white"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -132,7 +146,7 @@
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                         <svg x-show="! open"
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
+                            class="h-8 w-8 sm:w-10 sm:h-10 text-white"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -144,7 +158,11 @@
                                 d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
+        
                 </nav>
+
+               
+
             </div>
 
             <div class="flex justify-center py-8" 
@@ -158,231 +176,24 @@
                 @click.outside="open = true" aria-labelledby="mobile-dropdown">
 
                 
+                <ul class="flex justify-center bg-[#252529] rounded-full border-1 border-[#2f2f32] py-2 space-x-4 sm:space-x-6 md:space-x-8 px-4 sm:px-6 sm:px-8 text-sm">  
+                    <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
+                        <li>Home</li>
+                    </a>
+                    <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
+                        <li>About</li>
+                    </a>
+                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
+                        <li>Portfolio</li>
+                    </a>
+                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
+                        <li>Contact</li>
+                    </a>
+                </ul>
 
-                    <ul class="flex justify-center bg-[#252529] rounded-full border-1 border-[#2f2f32] py-2 space-x-4 sm:space-x-6 md:space-x-8 px-4 sm:px-6 sm:px-8 text-sm">  
-                        <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
-                            <li>Home</li>
-                        </a>
-                        <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
-                            <li>About</li>
-                        </a>
-                        <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
-                            <li>Portfolio</li>
-                        </a>
-                        <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-
-                
             </div>
 
         </div>
-
-        
-        
-        <!-- Main Navbar -->
-
-        <!-- <div x-data="{ open: true }" class="px-8 py-4 flex items-center justify-between hidden lg:flex" aria-labelledby="main-navbar">
-            <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 hover:brightness-125">
-                <h1 class="text-2xl font-bold text-gray-200">Pure Code</h1>
-                <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 text-blue-500"></i>
-                <h1 class="text-2xl font-bold text-gray-200 sm:pt-12 sm:pl-2">Web Design</h1>
-            </a>
-            <nav id="top" class="sm:flex sm:items-center absolute right-8">
-                <button
-                    type="button"
-                    @click="open = ! open"
-                    @keydown.escape="open = true">
-                <span class="sr-only">Open main menu</span>
-                    <svg x-show="open"
-                        class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200 hover:brightness-125"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <svg x-show="! open"
-                        class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200 hover:brightness-125"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </nav>
-            <nav x-show="! open" @click.outside="open = true"
-                 x-transition:enter="transition ease-out duration-300"
-                 x-transition:enter-start="opacity-0 scale-90"
-                 x-transition:enter-end="opacity-100 scale-100"
-                 x-transition:leave="transition ease-in duration-300"
-                 x-transition:leave-start="opacity-100 scale-100"
-                 x-transition:leave-end="opacity-0 scale-90"
-                 class="pr-16 xl:pr-24">
-                <ul class="flex space-x-8 xl:space-x-12 font-medium text-base xl:text-lg">  
-                    <a aria-label="Home" href="{{ url_for('index') }}" class="text-blue-500 hover:text-[#9DC1FB]">
-                        <li class="flex justify-center items-center space-x-2" 
-                            x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-                            <span>Home</span>
-                            <i class="fa-solid fa-chevron-up text-base pt-[2px]" 
-                               :class="hover ? '-rotate-90 ease-in-out duration-300 hover:text-[#9DC1FB]' : 'ease-in-out duration-300 text-black'">
-                            </i>
-                        </li>
-                    </a>
-                    <a aria-label="About" href="{{ url_for('about') }}" class="text-blue-500 hover:text-[#9DC1FB]">
-                        <li class="flex justify-center items-center space-x-2" 
-                            x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-                            <span>About</span>
-                            <i class="fa-solid fa-chevron-up text-base pt-[2px]" 
-                               :class="hover ? '-rotate-90 ease-in-out duration-300 hover:text-[#9DC1FB]' : 'ease-in-out duration-300 text-black'">
-                            </i>
-                        </li>
-                    </a>
-                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="text-blue-500 hover:text-[#9DC1FB]">
-                        <li class="flex justify-center items-center space-x-2" 
-                            x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-                            <span>Portfolio</span>
-                            <i class="fa-solid fa-chevron-up text-base pt-[2px]" 
-                               :class="hover ? '-rotate-90 ease-in-out duration-300 hover:text-[#9DC1FB]' : 'ease-in-out duration-300 text-black'">
-                            </i>
-                        </li>
-                    </a>
-                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="text-blue-500 hover:text-[#9DC1FB]">
-                        <li class="flex justify-center items-center space-x-2" 
-                            x-data="{ hover: '' }" @mouseover="hover = true" @mouseleave="hover = false">
-                            <span>Contact</span>
-                            <i class="fa-solid fa-chevron-up text-base pt-[2px]" 
-                               :class="hover ? '-rotate-90 ease-in-out duration-300 hover:text-[#9DC1FB]' : 'ease-in-out duration-300 text-black'">
-                            </i>
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-        </div> -->
-
-        <!-- Mobile sidenav -->
-
-        <!-- <div x-data="{ open: true }" aria-labelledby="mobile-navbar">
-            <div class="py-4 flex justify-between px-4 lg:hidden">
-                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 active:brightness-125">
-                    <h1 class="text-lg sm:text-2xl font-bold text-gray-200">Pure Code</h1>
-                    <i class="fa-solid fa-cubes text-xl sm:text-4xl sm:pt-6"></i>
-                    <h1 class="text-lg sm:text-2xl font-bold text-gray-200 sm:pt-12 sm:pl-2">Web Design</h1>
-                </a>
-                <nav id="top" class="flex items-center justify-center">
-                    <button 
-                        type="button"
-                        @click="open = ! open"
-                        @keydown.escape="open = true">
-                    <span class="sr-only">Open main menu</span>
-                        <svg x-show="open"
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true">
-                            <path stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <svg x-show="! open"
-                            class="h-8 w-8 sm:w-10 sm:h-10 text-gray-200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true">
-                            <path stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </nav>
-            </div> -->
-
-        
-
-            <!-- Mobile Dropdown -->
-            
-            <!-- <div class="text-center px-10 md:px-8 py-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row text-gray-200 border-b border-gray-700" 
-                 x-show="! open"
-                 x-transition:enter="transition ease-out duration-300"
-                 x-transition:enter-start="opacity-0 scale-90"
-                 x-transition:enter-end="opacity-100 scale-100"
-                 x-transition:leave="transition ease-in duration-300"
-                 x-transition:leave-start="opacity-100 scale-100"
-                 x-transition:leave-end="opacity-0 scale-90"
-                 @click.outside="open = true" aria-labelledby="mobile-dropdown">
-
-                <div class="w-full gap-y-4 flex space-x-4 space-x-4">  
-                    <div class="flex flex-col items-center w-full">
-                        <a aria-label="Home" class="text-sm sm:text-base w-full" href="{{ url_for('index') }}">
-                            <div class="bg-blue-500 text-gray-200 hover:bg-gray-200 hover:text-blue-500 flex items-center justify-center rounded-2xl py-1">
-                                <div>Home</div>
-                            </div>
-                        </a>
-                        <a href="{{ url_for('index') }}" aria-label="Home">
-                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
-                                <div class="text-sm sm:text-base">Home</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex flex-col items-center w-full">
-                        <a aria-label="About" class="text-sm sm:text-base w-full" href="{{ url_for('about') }}">
-                            <div class="bg-blue-500 text-gray-200 hover:bg-gray-200 hover:text-blue-500 flex items-center justify-center rounded-2xl py-1">
-                                <div>About</div>
-                            </div>
-                        </a>
-                        <a href="{{ url_for('about') }}" aria-label="About">
-                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
-                                <div class="text-sm sm:text-base">About</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="w-full gap-y-4 flex space-x-4 space-x-4"> 
-                    <div class="flex flex-col items-center w-full">
-                        <a aria-label="Portfolio" class="text-sm sm:text-base w-full" href="{{ url_for('portfolio') }}">
-                            <div class="bg-blue-500 text-gray-200 hover:bg-gray-200 hover:text-blue-500 flex items-center justify-center rounded-2xl py-1">
-                                <div>Portfolio</div>
-                            </div>
-                        </a>
-                        <a href="{{ url_for('portfolio') }}" aria-label="Portfolio">
-                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
-                                <div class="text-sm sm:text-base">Portfolio</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex flex-col items-center w-full">
-                        <a aria-label="Contact" class="text-sm sm:text-base w-full" href="{{ url_for('contact') }}">
-                            <div class="bg-blue-500 text-gray-200 hover:bg-gray-200 hover:text-blue-500 flex items-center justify-center rounded-2xl py-1">
-                                <div>Contact</div>
-                            </div>
-                        </a>
-                        <a href="{{ url_for('contact') }}" aria-label="Contact">
-                            <div class="bg-blue-500 w-28 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 active:bg-gray-200 active:text-blue-500">
-                                <div class="text-sm sm:text-base">Contact</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-
-      <!-- </div> -->
-
 
     </header>
     <main>
