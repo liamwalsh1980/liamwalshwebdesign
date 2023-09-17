@@ -46,53 +46,74 @@
 <body class="bg-black text-white px-4 md:px-20">
 
 
-    <header class="border-b-4 border-black z-10 h-screen bg-zinc-900 max-w-screen-xl mx-auto">
+    <header class="h-screen max-w-screen-xl mx-auto border-x border-b border-stone-800 bg-zinc-900 z-10">
 
-        <div class="flex justify-between md:grid md:grid-cols-3 content-center pt-4 px-4 texy-base font-normal hidden md:flex">
+            <div class="lg:flex justify-between pt-4 px-4 text-base font-normal hidden">
 
-            <div class="w-14 h-14 place-self-center justify-self-start flex items-center justify-center">
-                <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
-                         class="object-full rounded-full">
-            </div>
-            
-            <div class="bg-stone-800 rounded-full border-1 border-gray-800 shadow-xl items-center justify-center hidden md:flex">
+                <div class="w-1/3">
+                    <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center lg:items-start space-x-2 hover:text-white">
+                        <h1 class="">Pure Code</h1>
+                        <i class="fa-solid fa-cubes text-2xl sm:pt-4 text-blue-500"></i>
+                        <h1 class="sm:pt-10 sm:pl-1">Web Design</h1>
+                    </a>
+                </div>
 
-                <ul class="flex justify-center items-center space-x-8 xl:space-x-12 text-sm">  
+              
+                <ul class="flex justify-evenly self-start rounded-full border-1 border-[#2f2f32] bg-[#252529] w-1/3 py-2 text-sm">  
                     <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
-                        <li class="flex justify-center items-center space-x-2">
-                            <span>Home</span>
-                        </li>
+                        <li>Home</li>
                     </a>
                     <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
-                        <li class="flex justify-center items-center space-x-2">
-                            <span>About</span>
-                        </li>
+                        <li>About</li>
                     </a>
                     <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
-                        <li class="flex justify-center items-center space-x-2">
-                            <span>Portfolio</span>
-                        </li>
+                        <li>Portfolio</li>
                     </a>
                     <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
-                        <li class="flex justify-center items-center space-x-2">
-                            <span>Contact</span>
-                        </li>
+                        <li>Contact</li>
                     </a>
                 </ul>
+             
+
+                <div class="flex justify-end w-1/3">
+                    <div class="w-20 h-20">
+                        <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
+                                class="rounded-full border-1 border-[#2f2f32]">
+                    </div>
+                </div>
+                
             </div>
 
-        </div>
 
-        <div x-data="{ open: true }" aria-labelledby="mobile-navbar" class=" md:hidden p-4">
+
+
+
+        <!-- <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+            <div class="relative py-3 sm:max-w-xl mx-auto">
+                <nav x-data="{ expand: false }">
+                    <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white" @click="expand = !expand">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': expand,' -translate-y-1.5': !opeexpandn }"></span>
+                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': expand } "></span>
+                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': expand, ' translate-y-1.5': !opexpanden}"></span>
+                        </div>
+                    </button>
+                </nav>
+            </div>
+        </div> -->
+            
+
+        <div x-data="{ open: true }" aria-labelledby="mobile-navbar" class="lg:hidden p-4">
 
             <div class="flex justify-between">
 
-                <div class="w-14 h-14 place-self-center justify-self-start flex items-center justify-center">
+                <div class="w-14 h-14">
                     <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
-                             class="object-full rounded-full">
+                             class="rounded-full border-1 border-[#2f2f32]">
                 </div>
 
-                <nav id="top" class="flex items-center justify-center">
+                <nav id="top" class="flex items-start justify-center">
                     <button 
                         type="button"
                         @click="open = ! open"
@@ -126,7 +147,7 @@
                 </nav>
             </div>
 
-            <div class="text-center py-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row" 
+            <div class="flex justify-center py-8" 
                 x-show="! open"
                 x-transition:enter="transition ease-out duration-300"
                 x-transition:enter-start="opacity-0 scale-90"
@@ -136,34 +157,27 @@
                 x-transition:leave-end="opacity-0 scale-90"
                 @click.outside="open = true" aria-labelledby="mobile-dropdown">
 
-                <div class="bg-stone-800 rounded-full border-1 border-gray-800 shadow-xl flex items-center justify-center">
+                
 
-                    <ul class="flex justify-center items-center space-x-8 xl:space-x-12 text-sm w-full py-2">  
+                    <ul class="flex justify-center bg-[#252529] rounded-full border-1 border-[#2f2f32] py-2 space-x-4 sm:space-x-6 md:space-x-8 px-4 sm:px-6 sm:px-8 text-sm">  
                         <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">
-                            <li class="flex justify-center items-center space-x-2">
-                                <span>Home</span>
-                            </li>
+                            <li>Home</li>
                         </a>
                         <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50">
-                            <li class="flex justify-center items-center space-x-2">
-                                <span>About</span>
-                            </li>
+                            <li>About</li>
                         </a>
                         <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">
-                            <li class="flex justify-center items-center space-x-2">
-                                <span>Portfolio</span>
-                            </li>
+                            <li>Portfolio</li>
                         </a>
                         <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">
-                            <li class="flex justify-center items-center space-x-2">
-                                <span>Contact</span>
-                            </li>
+                            <li>Contact</li>
                         </a>
                     </ul>
-                </div>
+
+                
             </div>
 
-
+        </div>
 
         
         
@@ -378,7 +392,7 @@
 
     </main>
      <!-- Footer -->
-     <div class="bg-zinc-900 max-w-screen-xl mx-auto py-10">
+     <div class="border-x border-b border-stone-800 bg-zinc-900 max-w-screen-xl mx-auto py-10">
         <footer class="md:flex justify-between items-center mt-auto px-4 md:px-20 space-y-4 md:space-y-0" aria-labelledby="footer">
             <div class="text-center space-x-4">
                 <a aria-label="LinkedIn" href="https://www.linkedin.com/in/liam-walsh-11526a179/" target="_blank" 
