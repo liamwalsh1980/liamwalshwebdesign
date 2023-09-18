@@ -48,74 +48,55 @@
 
     <header class="h-screen max-w-screen-xl mx-auto border-x border-b border-stone-800 bg-zinc-900 z-10">
 
+        
+
+    
         <div class="lg:flex justify-between pt-4 px-4 text-sm font-normal hidden">
 
             <div class="w-1/3">
-                <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center lg:items-start space-x-2 hover:text-white">
+                <a aria-label="Home" href="/" class="flex items-center lg:items-start space-x-2 hover:text-white">
                     <h1 class="text-sm">Pure Code</h1>
                     <i class="fa-solid fa-cubes text-2xl sm:pt-4 text-blue-500"></i>
                     <h1 class="text-sm sm:pt-10 sm:pl-1">Web Design</h1>
                 </a>
             </div>
 
-
-            <ul class="flex justify-evenly self-start rounded-full ring-1 ring-[#2f2f32] bg-[#252529] w-1/3 py-0 text-sm" x-data="{ selected : 1}">  
-                <li>
-                    <a aria-label="home" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('index') }}">Home
-                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                    </a>
-                </li>
-                <li>
-                    <a aria-label="About" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('about') }}">About
-                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                    </a>
-                </li>
-                <li>
-                    <a aria-label="Portfolio" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('portfolio') }}">Portfolio
-                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                    </a>
-                </li>
-                <li>
-                    <a aria-label="Contact" class="relative block px-3 py-2 transition hover:text-blue-500 dark:hover:text-blue-400" href="{{ url_for('contact') }}">Contact
-                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                    </a>
-                </li>
-            
-            </ul>
-
-
-
-            
-            <!-- <ul class="flex justify-evenly self-start rounded-full ring-1 ring-[#2f2f32] bg-[#252529] w-1/3 py-2 text-sm">  
-                <li>
-                    <a aria-label="Home" href="{{ url_for('index') }}" class="hover:text-white hover:opacity-50">Home</a>
-                </li>
-            
-                <li>
-                    <a aria-label="About" href="{{ url_for('about') }}" class="hover:text-white hover:opacity-50 relative">About
-                        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
-                    </a>
-                </li>
-
-                <li>
-                    <a aria-label="Portfolio" href="{{ url_for('portfolio') }}" class="hover:text-white hover:opacity-50">Portfolio</a>
-                </li>
-
-                <li>
-                    <a aria-label="Contact" href="{{ url_for('contact') }}" class="hover:text-white hover:opacity-50">Contact</a>
-                </li>
-            </ul> -->
-            
-
+            <div x-data="{ active: window.location.pathname.split('/').pop() }" 
+                 class="flex justify-evenly self-start rounded-full ring-1 ring-[#2f2f32] bg-[#252529] w-1/3 py-0 text-sm"> 
+                <ul class="max-w-sm flex justify-between items-center">
+                    <li>
+                        <a href="/" aria-label="Home" @click="active = ''"
+                           class="relative block px-3 py-2.5 transition hover:text-blue-500 dark:hover:text-blue-400" :class="active === '' ? 'text-blue-500' : ''">Home
+                            <span :class="active === '' ? 'absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0' : ''"></span>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about" aria-label="About" @click="active = 'about'"
+                           class="relative block px-3 py-2.5 transition hover:text-blue-500 dark:hover:text-blue-400" :class="active === 'about' ? 'text-blue-500' : ''">About
+                           <span :class="active === 'about' ? 'absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0' : ''"></span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portfolio" aria-label="Portfolio" @click="active = 'portfolio'"
+                           class="relative block px-3 py-2.5 transition hover:text-blue-500 dark:hover:text-blue-400" :class="active === 'portfolio' ? 'text-blue-500' : ''">Portfolio
+                           <span :class="active === 'portfolio' ? 'absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0' : ''"></span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact" aria-label="Contact" @click="active = 'contact'"
+                           class="relative block px-3 py-2.5 transition hover:text-blue-500 dark:hover:text-blue-400" :class="active === 'contact' ? 'text-blue-500' : ''">Contact
+                           <span :class="active === 'contact' ? 'absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0' : ''"></span> 
+                        </a>
+                    </li>
+                </ul>  
+            </div>
             <div class="flex justify-end w-1/3">
                 <div class="w-20 h-20">
                     <img src="{{ ('static/images/headshot.jpeg') }}" alt="Website Design" loading="lazy" fetchpriority="high"
                             class="rounded-full border-1 border-[#2f2f32]">
                 </div>
             </div>
-            
         </div>
-
 
         <div x-data="{ open: true }" aria-labelledby="mobile-navbar" class="lg:hidden p-4">
 
