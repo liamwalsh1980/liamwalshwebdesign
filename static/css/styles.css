@@ -2009,6 +2009,11 @@ video {
     padding-right: 1rem;
   }
 
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .lg\:pt-40 {
     padding-top: 10rem;
   }
