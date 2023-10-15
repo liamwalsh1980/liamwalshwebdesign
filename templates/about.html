@@ -25,9 +25,9 @@
        
     </div>
 
-    <div class="xl:flex justify-between items-center lg:space-x-20 space-y-10 lg:space-y-16 xl:space-y-0 px-8 lg:px-40 pb-8 lg:pb-32">
+    <div class="flex flex-col md:flex-row justify-between items-center md:space-x-20 space-y-10 lg:space-y-16 xl:space-y-0 px-8 lg:px-40 pb-8 lg:pb-32 md:pt-8 lg:pt-0">
         <div class="flex flex-col items-center justify-around sm:justify-center lg:space-y-4 h-96 sm:h-72 lg:h-96">
-            <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200">Tech</h2>
+            <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200 pt-8 sm:pt-0">Tech</h2>
             <div class="flex py-8 sm:py-6 space-x-8 lg:space-x-16">
                 <a href="https://stripe.com/gb" aria-label="Stripe" target="_blank" class="hover:text-gray-200 active:text-blue-500">
                     <i class="fa-brands fa-cc-stripe text-5xl lg:text-6xl"></i>
@@ -72,28 +72,22 @@
             </div>
         </div>
 
-        <div class="text-sm md:text-base lg:text-lg xl:text-xl !leading-relaxed text-center">
+        <div class="text-sm md:text-base lg:text-lg xl:text-xl !leading-relaxed text-center text-zinc-500 hidden sm:block">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis ullam officia quisquam consequuntur corporis itaque fugiat a, molestiae error necessitatibus? Laboriosam aliquid cum hic quibusdam, dolores esse quod? Culpa.
         </div>
     </div>
 
-    <section class="py-12 lg:py-24 md:space-y-12 lg:space-y-16">
-        <div class="max-w-screen-xl mx-auto sm:flex sm:items-center justify-around space-y-10 sm:space-y-0">
+    <section class="py-0 lg:py-24 md:space-y-12 lg:space-y-16">
+        <div class="max-w-screen-xl mx-auto sm:flex sm:items-center justify-around space-y-10 sm:space-y-0 md:pt-12 lg:pt-0">
             <div class="flex flex-col items-center justify-center w-full sm:w-1/2 lg:w-2/5 space-y-8 sm:space-y-4 lg:space-y-8 px-4 sm:px-0">
-                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200">
+                <i class="fa-solid fa-users-gear text-5xl lg:text-6xl hidden sm:block text-zinc-500"></i>
+                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">
                     Services
                 </h2>
-                <i class="fa-solid fa-users-gear text-5xl lg:text-6xl hidden sm:block"></i>
-                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">
+                <p class="text-sm md:text-base lg:text-lg xl:text-xl !leading-relaxed text-center text-zinc-500">
                     In order to offer the best service, I would recommend an initial consultation to make sure your site is built the way you want it. 
                     This gives you the chance to express what styling, information, images and more you want to display.
                 </p>
-                <a href="{{ url_for('services') }}" aria-label="Read More">            
-                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 
-                                active:bg-gray-200 active:text-blue-500 text-center">
-                        <div class="text-sm sm:text-base">Read More</div>
-                    </div>
-                </a> 
             </div>
             <div class="relative h-1/2 w-full sm:w-1/2 lg:w-2/5 p-2">
                 <div class="absolute left-10 right-10 inset-0 bg-[#1895d7] blur-md"></div>
@@ -102,25 +96,19 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center items-center py-12 md:py-6">
-            <div class="h-[1px] w-1/2 sm:w-3/4 md:w-full max-w-screen-sm bg-gray-200"></div>
+        <div class="hidden sm:flex justify-center items-center py-12 md:py-6">
+            <div class="h-[1px] w-1/2 sm:w-3/4 md:w-full max-w-screen-sm bg-zinc-500"></div>
         </div>
-        <div class="max-w-screen-xl mx-auto sm:flex sm:items-center justify-around space-y-10 sm:space-y-0 flex-row-reverse">
+        <div class="max-w-screen-xl mx-auto sm:flex sm:items-center justify-around space-y-10 sm:space-y-0 flex-row-reverse pt-8 sm:pt-0">
             <div class="flex flex-col items-center justify-center w-full sm:w-1/2 lg:w-2/5 space-y-8 sm:space-y-4 lg:space-y-8 px-4 sm:px-0">
-                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal text-gray-200">
+                <i class="fa-solid fa-piggy-bank text-5xl lg:text-6xl hidden sm:block text-zinc-500"></i>
+                <h2 class="text-2xl lg:text-4xl font-semibold lg:font-normal">
                     Savings
                 </h2>
-                <i class="fa-solid fa-piggy-bank text-5xl lg:text-6xl hidden sm:block"></i>
-                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-gray-200 text-center">
+                <p class="text-base sm:text-sm md:text-base lg:text-xl xl:text-2xl text-zinc-500 text-center">
                     With cost effective solutions for all budgets and fixed deadlines that works for you; I will endeavour to exceed your expectations 
                     throughout the whole process from the initial consultation through to launch, along with the aftercare which is included.
                 </p>
-                <a href="{{ url_for('services') }}" aria-label="Read More">            
-                    <div class="bg-blue-500 text-gray-200 w-24 lg:w-32 rounded-2xl py-1 hover:bg-gray-200 hover:text-blue-500 
-                                active:bg-gray-200 active:text-blue-500 text-center">
-                        <div class="text-sm sm:text-base">Read More</div>
-                    </div>
-                </a> 
             </div>
             <div class="relative h-1/2 w-full sm:w-1/2 lg:w-2/5 p-2">
                 <div class="absolute left-10 right-10 inset-0 bg-[#1895d7] blur-md"></div>
