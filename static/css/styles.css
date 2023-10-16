@@ -1670,18 +1670,14 @@ video {
     padding-left: 0.5rem;
   }
 
-  .sm\:pb-0 {
-    padding-bottom: 0px;
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .sm\:text-4xl {
@@ -1979,6 +1975,12 @@ video {
     margin-bottom: calc(6rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(8rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:p-40 {
     padding: 10rem;
   }
@@ -2042,6 +2044,10 @@ video {
 
   .lg\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-4xl {
