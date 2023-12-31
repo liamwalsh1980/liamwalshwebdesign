@@ -49,13 +49,18 @@
                 </div>
                 <div class="modal" tabindex="-1" id="modal" role="dialog">
                     <div class="modal-dialog">
-                        <div class="modal-content bg-[#1E417B] text-white border border-white rounded-lg">
+                        <div class="modal-content bg-black text-white border border-white rounded-lg">
                             <div class="modal-header">
-                                <div class="modal-title w-full flex items-center justify-center">
+                                <div class="modal-title w-full flex items-center justify-center logo">
+                                    <style>
+                                        .logo {
+                                            font-family: 'Russo One', sans-serif;
+                                        }
+                                    </style>
                                     <a aria-label="Home" href="{{ url_for('index') }}" class="flex items-center sm:items-start space-x-2 group">
-                                        <h1 class="lg:text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100">Pure Code</h1>
-                                        <i class="fa-solid fa-cubes text-2xl sm:text-4xl sm:pt-6 opacity-80 group-hover:opacity-100 text-gray-200"></i>
-                                        <h1 class="lg:text-2xl font-bold text-gray-200 opacity-80 group-hover:opacity-100 sm:pt-12 sm:pl-2">Web Design</h1>
+                                        <h1 class="text-zinc-500 text-white text-base">pure code</h1>
+                                        <i class="fa-solid fa-code text-2xl sm:pt-4 text-blue-500"></i>
+                                        <h1 class="text-zinc-500 text-white text-base sm:pt-10 sm:pl-1">web design</h1>
                                     </a>
                                 </div>
                             </div>
@@ -63,8 +68,11 @@
                                 <p class="modal-message">Thank you for getting in touch. You will receive an email or call very soon to dicuss your requirements further.</p>
                             </div>
                             <div class="modal-footer flex items-center justify-center">
-                                <button type="button" class="bg-gray-200 text-[#1E417B] hover:brightness-125 active:scale-110 py-1 px-4 rounded-full"
-                                        data-bs-dismiss="modal" id="closing-btn">Close</button>
+                                <button type="button" 
+                                        class="bg-zinc-500 hover:bg-white hover:text-black w-28 md:w-32 lg:w-36 h-8 flex items-center justify-center 
+                                               rounded-full text-sm md:text-base text-center"
+                                        data-bs-dismiss="modal" id="closing-btn">Close
+                                </button>  
                             </div>
                         </div>
                     </div>
