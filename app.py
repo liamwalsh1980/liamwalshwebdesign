@@ -24,7 +24,7 @@ def contact():
 @app.route("/about")
 def about():
     return render_template("about.html")
-    
+
 
 @app.route("/portfolio")
 def portfolio():
@@ -34,4 +34,4 @@ def portfolio():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
