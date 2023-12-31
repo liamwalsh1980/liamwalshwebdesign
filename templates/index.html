@@ -24,7 +24,7 @@
             </a>
         </div>
     </div>
-    <div class="xl:flex justify-between lg:space-x-10 space-y-10 lg:space-y-16 xl:space-y-0 py-8 lg:py-0">
+    <div class="xl:flex justify-between xl:space-x-10 space-y-10 lg:space-y-16 xl:space-y-0 py-8 lg:py-0">
         <div x-data="{ isOpen: false, hover: '' }" 
             @mouseover="hover = true"
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
@@ -70,10 +70,10 @@
         <div x-data="{ isOpen: false, hover: '' }" 
             @mouseover="hover = true"
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
-            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full md:w-2/3 lg:w-3/5 xl:w-full cursor-pointer rotate-1 group">
+            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-3/5 xl:w-full cursor-pointer rotate-1 group">
                 <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" loading="lazy" fetchpriority="high" 
-                     class="rounded-2xl w-full -hue-rotate-180 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : '' " />
-                <div class="absolute">
+                     class="rounded-2xl w-full -hue-rotate-180 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
+                    <div class="absolute">
                     <p x-show="!isOpen" class="text-2xl lg:text-3xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Services</p>
                     <div>
                         <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 xl:space-y-2">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
     <div class="max-w-screen-xl w-full mx-auto px-4 xl:px-0 py-8 md:py-20 lg:py-40 lg:space-y-10">
         <div class="lg:flex md:items-center md:justify-between gap-x-12">
