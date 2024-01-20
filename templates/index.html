@@ -26,23 +26,23 @@
         </div>
     </div>
      <!--Image - services-->
-    <div class="xl:flex justify-between xl:space-x-10 space-y-10 lg:space-y-16 xl:space-y-0 py-8 lg:py-0 px-4">
+    <div class="lg:flex justify-between lg:space-x-6 xl:space-x-10 space-y-10 md:space-y-16 lg:space-y-0 py-8 lg:py-0 px-4">
         <div x-data="{ isOpen: false, hover: '' }" 
             @mouseover="hover = true"
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
-            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-3/5 xl:w-full cursor-pointer rotate-1 group">
+            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer rotate-1 group">
                 <img src="{{ ('static/images/website_design.jpg') }}" alt="Website Design" loading="lazy" fetchpriority="high" 
                      class="rounded-2xl w-full hue-rotate-30 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                 <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-3xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Design</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Design</p>
                     <div>
-                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 xl:space-y-2">
-                            <li><span class="text-gray-200 text-2xl lg:text-3xl xl:text-4xl underline decoration-1 underline-offset-8 xl:hidden">Website Design</li></span>
-                            <li><span class="text-gray-200">Full design process</li></span>
-                            <li><span class="text-gray-200">Mobile first designs</li></span>
-                            <li><span class="text-gray-200">User experience focused</li></span>
-                            <li><span class="text-gray-200">Styling perfection</li></span>
-                            <li><span class="text-gray-200">Cost effective designs</li></span>
+                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
+                            <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Website Design</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Full design process</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Mobile first designs</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">User experience focused</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Styling perfection</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Cost effective designs</li></span>
                         </ul>
                     </div>
                 </div>
@@ -51,19 +51,19 @@
         <div x-data="{ isOpen: false, hover: '' }" 
             @mouseover="hover = true"
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
-            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-3/5 xl:w-full cursor-pointer -rotate-1 group">
+            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer -rotate-1 group">
                 <img src="{{ ('static/images/software_development.jpg') }}" alt="Software Development" loading="lazy" fetchpriority="high" 
                      class="rounded-2xl w-full -hue-rotate-90 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                 <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-3xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Software Development</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Software Development</p>
                     <div>
-                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 xl:space-y-2">
-                            <li><span class="text-gray-200 text-2xl lg:text-3xl xl:text-4xl underline decoration-1 underline-offset-8 xl:hidden">Software Development</li></span>
-                            <li><span class="text-gray-200">Latest software used</li></span>
-                            <li><span class="text-gray-200">Database functionality</li></span>
-                            <li><span class="text-gray-200">User account access</li></span>
-                            <li><span class="text-gray-200">Full site interaction</li></span>
-                            <li><span class="text-gray-200">Full device testing</li></span>
+                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
+                            <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Software Development</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Latest software used</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Database functionality</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">User account access</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Full site interaction</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Full device testing</li></span>
                         </ul>
                     </div>
                 </div>
@@ -72,19 +72,19 @@
         <div x-data="{ isOpen: false, hover: '' }" 
             @mouseover="hover = true"
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
-            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-3/5 xl:w-full cursor-pointer rotate-1 group">
+            <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer rotate-1 group">
                 <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" loading="lazy" fetchpriority="high" 
                      class="rounded-2xl w-full -hue-rotate-180 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                     <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-3xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Services</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Services</p>
                     <div>
-                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 xl:space-y-2">
-                            <li><span class="text-gray-200 text-2xl lg:text-3xl xl:text-4xl underline decoration-1 underline-offset-8 xl:hidden">Website Services</li></span>
-                            <li><span class="text-gray-200">Site secure hosting</span></li>
-                            <li><span class="text-gray-200">Domain name sourcing</span></li>
-                            <li><span class="text-gray-200">Website health checks</span></li>
-                            <li><span class="text-gray-200">SEO and Marketing</span></li>
-                            <li><span class="text-gray-200">Cost effective packages</span></li>
+                        <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
+                            <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Website Services</li></span>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Site secure hosting</span></li>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Domain name sourcing</span></li>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Website health checks</span></li>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">SEO and Marketing</span></li>
+                            <li><span class="text-gray-200 lg:text-sm xl:text-xl">Cost effective packages</span></li>
                         </ul>
                     </div>
                 </div>
