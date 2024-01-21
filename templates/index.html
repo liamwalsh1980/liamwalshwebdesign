@@ -32,9 +32,9 @@
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
             <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer rotate-1 group">
                 <img src="{{ ('static/images/website_design.jpg') }}" alt="Website Design" loading="lazy" fetchpriority="high" 
-                     class="rounded-2xl w-full hue-rotate-30 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
+                     class="rounded-2xl w-full hue-rotate-30 opacity-70 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                 <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Design</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-3xl">Website Design</p>
                     <div>
                         <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
                             <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Website Design</li></span>
@@ -53,9 +53,9 @@
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
             <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer -rotate-1 group">
                 <img src="{{ ('static/images/software_development.jpg') }}" alt="Software Development" loading="lazy" fetchpriority="high" 
-                     class="rounded-2xl w-full -hue-rotate-90 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
+                     class="rounded-2xl w-full -hue-rotate-90 opacity-70 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                 <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Software Development</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-3xl">Software Development</p>
                     <div>
                         <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
                             <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Software Development</li></span>
@@ -74,9 +74,9 @@
             @mouseleave="hover = false" class="w-auto md:w-full xl:w-auto flex items-center justify-center">
             <div @click="isOpen = ! isOpen" class="relative flex items-center justify-center h-full w-full sm:w-2/3 lg:w-full cursor-pointer rotate-1 group">
                 <img src="{{ ('static/images/website_services.jpg') }}" alt="Website Services" loading="lazy" fetchpriority="high" 
-                     class="rounded-2xl w-full -hue-rotate-180 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
+                     class="rounded-2xl w-full -hue-rotate-180 opacity-70 group-hover:opacity-20" :class="isOpen || hover ? 'opacity-20' : ''"/>
                     <div class="absolute">
-                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-4xl" :class="hover ? 'opacity-100' : 'opacity-0'">Website Services</p>
+                    <p x-show="!isOpen" class="text-2xl lg:text-xl xl:text-3xl">Website Services</p>
                     <div>
                         <ul x-show="isOpen" class="text-sm md:text-base lg:text-lg xl:text-xl list-none text-center space-y-2 sm:space-y-4 lg:space-y-0 xl:space-y-2">
                             <li><span class="text-gray-200 text-2xl lg:text-lg xl:text-4xl underline decoration-1 underline-offset-8 lg:hidden">Website Services</li></span>
