@@ -1195,16 +1195,12 @@ video {
   opacity: 0.5;
 }
 
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.opacity-90 {
-  opacity: 0.9;
-}
-
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-20 {
+  opacity: 0.2;
 }
 
 .shadow-xl {
@@ -1304,10 +1300,6 @@ video {
 
 .group:hover .group-hover\:opacity-10 {
   opacity: 0.1;
-}
-
-.group:hover .group-hover\:opacity-50 {
-  opacity: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1746,13 +1738,13 @@ video {
     line-height: 1.75rem;
   }
 
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
