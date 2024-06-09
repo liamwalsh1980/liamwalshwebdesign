@@ -25,19 +25,19 @@
         </div>
     </div>
      <!--Contact form-->
-    <div class="px-8 lg:px-40 space-y-8">
-        <section class="text-center flex justify-center sm:justify-start items-center w-full mb-32 py-8 md:py-0 rounded-lg text-gray-900" id="contact-form">
+    <div class="px-4 lg:!px-40 space-y-8 w-full">
+        <section class=" w-full mb-32 py-8 md:py-0 rounded-lg text-gray-900 md:w-3/4 lg:w-2/3" id="contact-form">
             <form onsubmit="return sendMail(this);" method="POST, GET">
                 <div class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
-                    <div class="space-y-4 flex flex-col items-start w-full" aria-labelledby="contact">
-                        <div><input id="name" name="name" type="text" minlength="1" maxlength="400" class="validate w-72 sm:w-[450px] px-1 h-8 rounded" placeholder="Name *" required></div>
-                        <div><input id="email" name="email" type="email" minlength="1" maxlength="100" class="validate w-72 sm:w-[450px] px-1 h-8 rounded" placeholder="Email Address *" required></div>
-                        <div><input id="number" name="number" type="number" minlength="1" maxlength="11" pattern="^[a-zA-Z]{1,100}$" class="validate w-72 sm:w-[450px] px-1 h-8 rounded" placeholder="Contact Number *" required></div>
-                        <div><textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-72 sm:w-[450px] h-48 px-1 rounded" placeholder="Tell me more...."></textarea></div>
+                    <div class="space-y-5 flex flex-col items-start w-full" aria-labelledby="contact">
+                        <input id="name" name="name" type="text" minlength="1" maxlength="400" class="validate w-full px-1 h-10 rounded" placeholder="Name *" required>
+                        <input id="email" name="email" type="email" minlength="1" maxlength="100" class="validate w-full px-1 h-10 rounded" placeholder="Email Address *" required>
+                        <input id="number" name="number" type="number" minlength="1" maxlength="11" pattern="^[a-zA-Z]{1,100}$" class="validate w-full px-1 h-10 rounded" placeholder="Contact Number *" required>
+                        <textarea id="message" name="message" type="text" minlength="3" maxlength="200" pattern="^[a-zA-Z]{3,200}$" class="validate w-full h-48 p-1 rounded" placeholder="Tell me more...."></textarea>
                     </div>
                     <div class="w-full text-right flex justify-between items-start">
-                        <p class="text-sm italic text-gray-200">* Required</p>
-                        <div class="bg-zinc-500 hover:bg-white hover:text-black w-28 md:w-32 lg:w-36 h-8 flex items-center justify-center rounded-full mt-2">
+                        <p class="text-sm italic text-gray-200 mt-1">* Required</p>
+                        <div class="bg-zinc-500 hover:bg-white hover:text-black w-28 md:w-32 lg:w-36 h-8 flex items-center justify-center rounded-full mt-3">
                             <button
                                 type="submit" value="submit"
                                 class="text-sm md:text-base text-center">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="modal" tabindex="-1" id="modal" role="dialog">
                     <div class="modal-dialog">
-                        <div class="modal-content bg-black text-white border border-white rounded-lg">
+                        <div class="modal-content bg-[#252529] text-white border border-[#252529] rounded-lg">
                             <div class="modal-header">
                                 <div class="modal-title w-full flex items-center justify-center logo">
                                     <style>
